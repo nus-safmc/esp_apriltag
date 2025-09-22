@@ -34,11 +34,17 @@
 #include <esp_log.h>
 #include <esp_system.h>
 #include <nvs_flash.h>
+#include <stdio.h>
 #include <sys/param.h>
 #include <string.h>
 
 // Apriltag dependencies
 #include "apriltag.h"
+#include "common/image_types.h"
+#include "common/zarray.h"
+#include "common/image_u8.h"
+#include "sensor.h"
+#include "tag16h5.h"
 #include "tag36h11.h"
 
 #include "freertos/FreeRTOS.h"
@@ -132,13 +138,13 @@ static camera_config_t camera_config = {
     .ledc_timer = LEDC_TIMER_0,
     .ledc_channel = LEDC_CHANNEL_0,
 
-    .pixel_format = PIXFORMAT_JPEG, //YUV422,GRAYSCALE,RGB565,JPEG
+    .pixel_format = PIXFORMAT_GRAYSCALE, //YUV422,GRAYSCALE,RGB565,JPEG
     .frame_size = FRAMESIZE_QVGA,    //QQVGA-UXGA Do not use sizes above QVGA when not JPEG
 
-    .jpeg_quality = 12, //0-63 lower number means higher quality
+    // .jpeg_quality = 12, //0-63 lower number means higher quality
     .fb_count = 1,       //if more than one, i2s runs in continuous mode. Use only with JPEG
     .fb_location = CAMERA_FB_IN_PSRAM,
-    .grab_mode = CAMERA_GRAB_WHEN_EMPTY,
+    .grab_mode = CAMERA_GRAB_LATEST,
 };
 
 static esp_err_t init_camera(void)
@@ -150,10 +156,42 @@ static esp_err_t init_camera(void)
         ESP_LOGE(TAG, "Camera Init Failed");
         return err;
     }
-
+    sensor_t * s = esp_camera_sensor_get();
+    // Initial sensors are flipped vertically and colors are a bit saturated
+    if (s->id.PID == OV3660_PID) {
+      s->set_vflip(s, 1); // flip it back
+      s->set_brightness(s, 1); // up the brightness just a bit
+      s->set_saturation(s, -2); // lower the saturation
+    } else {
+      s->set_brightness(s, 1); // up the brightness just a bit
+      s->set_saturation(s, -2); // lower the saturation
+    }
+    s->set_pixformat(s, PIXFORMAT_GRAYSCALE);
     return ESP_OK;
 }
 #endif
+
+#define LOOP_DELAY_MS 10
+
+void print_img(image_u8_t* im) {
+  for (int i = 0; i < im->height; i++) {
+    for (int j = 0; j < im->width; j++)
+      printf("%d ", im->buf[i*(im->stride) + j]);
+    printf("\n");
+  }
+}
+
+int avg_img(image_u8_t* im) {
+  int sum = 0;
+  int len = (im->width) * (im->height);
+  for (int i = 0; i < im->height; i++) {
+    for (int j = 0; j < im->width; j++)
+      sum += (im->buf[i*(im->stride) + j]);
+  }
+
+  sum /= len;
+  return sum;
+}
 
 void app_main(void)
 {
@@ -177,20 +215,20 @@ void app_main(void)
     //                big number = slower but can detect small tags (or tag far away)
     // With quad_sigma = 1.0 and quad_decimate = 4.0, ESP32-CAM can detect 16h5 tag
     // from the distance of about 1 meter (tested with tag on screen. not on paper)
-    td->quad_sigma = 0.0;
-    td->quad_decimate = 4.0;
-    td->refine_edges = 0;
+    td->quad_sigma = 0.3;
+    td->quad_decimate = 5.0;
+    td->refine_edges = 1;
     td->decode_sharpening = 0;
     td->nthreads = 1;
     td->debug = 0;
 
     while (1)
     {
-        ESP_LOGI(TAG, "Taking picture...");
+        // ESP_LOGI(TAG, "Taking picture...");
         camera_fb_t *pic = esp_camera_fb_get();
 
         // use pic->buf to access the image
-        ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes", pic->len);
+        // ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes (h=%zu, w=%zu, len=%zu)", pic->len, pic->height, pic->width, pic->len);
 
         image_u8_t at_im = {
           .width = pic->width,
@@ -198,15 +236,24 @@ void app_main(void)
           .stride = pic->width,
           .buf = pic->buf
         };
+
+        // print_img(&at_im);
+        // ESP_LOGI(TAG, "avg_img=%d", avg_img(&at_im));
         zarray_t *at_detections = apriltag_detector_detect(td, &at_im);
 
-        for (int i = 0; i < zarray_size(detections); i++) {
+        for (int i = 0; i < zarray_size(at_detections); i++) {
           apriltag_detection_t *det;
           zarray_get(at_detections, i, &det);
+          ESP_LOGI(TAG, "Apriltag found! ID=%d", det->id);
         }
+        ESP_LOGI(TAG, "%d Apriltags Found!", zarray_size(at_detections));
+
+        // cleanup
+        apriltag_detections_destroy(at_detections);
+
         esp_camera_fb_return(pic);
 
-        vTaskDelay(5000 / portTICK_RATE_MS);
+        vTaskDelay(LOOP_DELAY_MS / portTICK_RATE_MS);
     }
 #else
     ESP_LOGE(TAG, "Camera support is not available for this chip");

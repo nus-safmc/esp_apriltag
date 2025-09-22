@@ -1,0 +1,241 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d0b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e724h ( 59172) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e74c vaddr=3fc94800 size=018cch (  6348) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=35590h (218512) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=000655b8 vaddr=3fc960cc size=04e98h ( 20120) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a458 vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007ab88 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (213) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  ba94e5831...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (881) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (887) cam_hal: cam config ok[0m
+[0;32mI (889) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (968) example:take_picture: Taking picture...[0m
+[0;32mI (1001) example:take_picture: Picture taken! Its size was: 5041 bytes[0m
+[0;32mI (2083) example:take_picture: Taking picture...[0m
+[0;32mI (2083) example:take_picture: Picture taken! Its size was: 5055 bytes[0m
+[0;32mI (3134) example:take_picture: Taking picture...[0m
+[0;32mI (3134) example:take_picture: Picture taken! Its size was: 5502 bytes[0m
+[0;32mI (4180) example:take_picture: Taking picture...[0m
+[0;32mI (4180) example:take_picture: Picture taken! Its size was: 5502 bytes[0m
+[0;32mI (5233) example:take_picture: Taking picture...[0m
+[0;32mI (5233) example:take_picture: Picture taken! Its size was: 5454 bytes[0m
+[0;32mI (6307) example:take_picture: Taking picture...[0m
+[0;32mI (6307) example:take_picture: Picture taken! Its size was: 6057 bytes[0m
+[0;32mI (7383) example:take_picture: Taking picture...[0m
+[0;32mI (7383) example:take_picture: Picture taken! Its size was: 4559 bytes[0m
+[0;32mI (8430) example:take_picture: Taking picture...[0m
+[0;32mI (8430) example:take_picture: Picture taken! Its size was: 4559 bytes[0m
+[0;32mI (9532) example:take_picture: Taking picture...[0m
+[0;32mI (9532) example:take_picture: Picture taken! Its size was: 4590 bytes[0m
+[0;32mI (10625) example:take_picture: Taking picture...[0m
+[0;32mI (10625) example:take_picture: Picture taken! Its size was: 4642 bytes[0m
+[0;32mI (11721) example:take_picture: Taking picture...[0m
+[0;32mI (11721) example:take_picture: Picture taken! Its size was: 4642 bytes[0m
+[0;32mI (12808) example:take_picture: Taking picture...[0m
+[0;32mI (12808) example:take_picture: Picture taken! Its size was: 4356 bytes[0m
+[0;32mI (13921) example:take_picture: Taking picture...[0m
+[0;32mI (13921) example:take_picture: Picture taken! Its size was: 3761 bytes[0m
+[0;32mI (15004) example:take_picture: Taking picture...[0m
+[0;32mI (15004) example:take_picture: Picture taken! Its size was: 4354 bytes[0m
+[0;32mI (16078) example:take_picture: Taking picture...[0m
+[0;32mI (16078) example:take_picture: Picture taken! Its size was: 4354 bytes[0m
+[0;32mI (17160) example:take_picture: Taking picture...[0m
+[0;32mI (17160) example:take_picture: Picture taken! Its size was: 4404 bytes[0m
+[0;32mI (18220) example:take_picture: Taking picture...[0m
+[0;32mI (18220) example:take_picture: Picture taken! Its size was: 4404 bytes[0m
+[0;32mI (19303) example:take_picture: Taking picture...[0m
+[0;32mI (19303) example:take_picture: Picture taken! Its size was: 4454 bytes[0m
+[0;32mI (20365) example:take_picture: Taking picture...[0m
+[0;32mI (20365) example:take_picture: Picture taken! Its size was: 4454 bytes[0m
+[0;32mI (21461) example:take_picture: Taking picture...[0m
+[0;32mI (21461) example:take_picture: Picture taken! Its size was: 4575 bytes[0m
+[0;32mI (22538) example:take_picture: Taking picture...[0m
+[0;32mI (22538) example:take_picture: Picture taken! Its size was: 4997 bytes[0m
+[0;32mI (23614) example:take_picture: Taking picture...[0m
+[0;32mI (23614) example:take_picture: Picture taken! Its size was: 6057 bytes[0m
+[0;32mI (24686) example:take_picture: Taking picture...[0m
+[0;32mI (24686) example:take_picture: Picture taken! Its size was: 5246 bytes[0m
+[0;32mI (25731) example:take_picture: Taking picture...[0m
+[0;32mI (25731) example:take_picture: Picture taken! Its size was: 5206 bytes[0m
+[0;32mI (26792) example:take_picture: Taking picture...[0m
+[0;32mI (26792) example:take_picture: Picture taken! Its size was: 5362 bytes[0m
+[0;32mI (27879) example:take_picture: Taking picture...[0m
+[0;32mI (27879) example:take_picture: Picture taken! Its size was: 5362 bytes[0m
+[0;32mI (28921) example:take_picture: Taking picture...[0m
+[0;32mI (28921) example:take_picture: Picture taken! Its size was: 5275 bytes[0m
+[0;32mI (29994) example:take_picture: Taking picture...[0m
+[0;32mI (29994) example:take_picture: Picture taken! Its size was: 5275 bytes[0m
+[0;32mI (31081) example:take_picture: Taking picture...[0m
+[0;32mI (31081) example:take_picture: Picture taken! Its size was: 4219 bytes[0m
+[0;32mI (32127) example:take_picture: Taking picture...[0m
+[0;32mI (32127) example:take_picture: Picture taken! Its size was: 4219 bytes[0m
+[0;32mI (33196) example:take_picture: Taking picture...[0m
+[0;32mI (33196) example:take_picture: Picture taken! Its size was: 4978 bytes[0m
+[0;32mI (34226) example:take_picture: Taking picture...[0m
+[0;32mI (34226) example:take_picture: Picture taken! Its size was: 4978 bytes[0m
+[0;32mI (35285) example:take_picture: Taking picture...[0m
+[0;32mI (35285) example:take_picture: Picture taken! Its size was: 5054 bytes[0m
+[0;32mI (36339) example:take_picture: Taking picture...[0m
+[0;32mI (36339) example:take_picture: Picture taken! Its size was: 5054 bytes[0m
+[0;32mI (37411) example:take_picture: Taking picture...[0m
+[0;32mI (37411) example:take_picture: Picture taken! Its size was: 5046 bytes[0m
+[0;32mI (38515) example:take_picture: Taking picture...[0m
+[0;32mI (38515) example:take_picture: Picture taken! Its size was: 5046 bytes[0m
+[0;32mI (39587) example:take_picture: Taking picture...[0m
+[0;32mI (39587) example:take_picture: Picture taken! Its size was: 5015 bytes[0m
+[0;32mI (40692) example:take_picture: Taking picture...[0m
+[0;32mI (40692) example:take_picture: Picture taken! Its size was: 5015 bytes[0m
+[0;32mI (41755) example:take_picture: Taking picture...[0m
+[0;32mI (41755) example:take_picture: Picture taken! Its size was: 4995 bytes[0m
+[0;32mI (42814) example:take_picture: Taking picture...[0m
+[0;32mI (42814) example:take_picture: Picture taken! Its size was: 4995 bytes[0m
+[0;32mI (43851) example:take_picture: Taking picture...[0m
+[0;32mI (43851) example:take_picture: Picture taken! Its size was: 4788 bytes[0m
+[0;32mI (44937) example:take_picture: Taking picture...[0m
+[0;32mI (44937) example:take_picture: Picture taken! Its size was: 4968 bytes[0m
+[0;32mI (45994) example:take_picture: Taking picture...[0m
+[0;32mI (45994) example:take_picture: Picture taken! Its size was: 5006 bytes[0m
+[0;32mI (47035) example:take_picture: Taking picture...[0m
+[0;32mI (47035) example:take_picture: Picture taken! Its size was: 5006 bytes[0m
+[0;32mI (48086) example:take_picture: Taking picture...[0m
+[0;32mI (48086) example:take_picture: Picture taken! Its size was: 4979 bytes[0m
+[0;32mI (49193) example:take_picture: Taking picture...[0m
+[0;32mI (49193) example:take_picture: Picture taken! Its size was: 4979 bytes[0m
+[0;32mI (50210) example:take_picture: Taking picture...[0m
+[0;32mI (50210) example:take_picture: Picture taken! Its size was: 4971 bytes[0m
+[0;32mI (51270) example:take_picture: Taking picture...[0m
+[0;32mI (51270) example:take_picture: Picture taken! Its size was: 4971 bytes[0m
+[0;32mI (52348) example:take_picture: Taking picture...[0m
+[0;32mI (52348) example:take_picture: Picture taken! Its size was: 4778 bytes[0m
+[0;32mI (53448) example:take_picture: Taking picture...[0m
+[0;32mI (53448) example:take_picture: Picture taken! Its size was: 4778 bytes[0m
+[0;32mI (54506) example:take_picture: Taking picture...[0m
+[0;32mI (54506) example:take_picture: Picture taken! Its size was: 4472 bytes[0m
+[0;32mI (55571) example:take_picture: Taking picture...[0m
+[0;32mI (55571) example:take_picture: Picture taken! Its size was: 4669 bytes[0m
+[0;32mI (56621) example:take_picture: Taking picture...[0m
+[0;32mI (56621) example:take_picture: Picture taken! Its size was: 4669 bytes[0m
+[0;32mI (57669) example:take_picture: Taking picture...[0m
+[0;32mI (57669) example:take_picture: Picture taken! Its size was: 4655 bytes[0m
+[0;32mI (58704) example:take_picture: Taking picture...[0m
+[0;32mI (58704) example:take_picture: Picture taken! Its size was: 4655 bytes[0m
+[0;32mI (59763) example:take_picture: Taking picture...[0m
+[0;32mI (59763) example:take_picture: Picture taken! Its size was: 4611 bytes[0m
+[0;32mI (60844) example:take_picture: Taking picture...[0m
+[0;32mI (60844) example:take_picture: Picture taken! Its size was: 4710 bytes[0m
+[0;32mI (61913) example:take_picture: Taking picture...[0m
+[0;32mI (61913) example:take_picture: Picture taken! Its size was: 4710 bytes[0m
+[0;32mI (63014) example:take_picture: Taking picture...[0m
+[0;32mI (63014) example:take_picture: Picture taken! Its size was: 4702 bytes[0m
+[0;32mI (64081) example:take_picture: Taking picture...[0m
+[0;32mI (64081) example:take_picture: Picture taken! Its size was: 4702 bytes[0m
+[0;32mI (65127) example:take_picture: Taking picture...[0m
+[0;32mI (65127) example:take_picture: Picture taken! Its size was: 4743 bytes[0m
+[0;32mI (66194) example:take_picture: Taking picture...[0m
+[0;32mI (66194) example:take_picture: Picture taken! Its size was: 4743 bytes[0m
+[0;32mI (67254) example:take_picture: Taking picture...[0m
+[0;32mI (67254) example:take_picture: Picture taken! Its size was: 4690 bytes[0m
+[0;32mI (68323) example:take_picture: Taking picture...[0m
+[0;32mI (68323) example:take_picture: Picture taken! Its size was: 4665 bytes[0m
+[0;32mI (69387) example:take_picture: Taking picture...[0m
+[0;32mI (69387) example:take_picture: Picture taken! Its size was: 4646 bytes[0m
+[0;32mI (70457) example:take_picture: Taking picture...[0m
+[0;32mI (70457) example:take_picture: Picture taken! Its size was: 4603 bytes[0m
+[0;32mI (71515) example:take_picture: Taking picture...[0m
+[0;32mI (71515) example:take_picture: Picture taken! Its size was: 4636 bytes[0m
+[0;32mI (72584) example:take_picture: Taking picture...[0m
+[0;32mI (72584) example:take_picture: Picture taken! Its size was: 4636 bytes[0m
+[0;32mI (73651) example:take_picture: Taking picture...[0m
+[0;32mI (73651) example:take_picture: Picture taken! Its size was: 4657 bytes[0m
+[0;32mI (74700) example:take_picture: Taking picture...[0m
+[0;32mI (74700) example:take_picture: Picture taken! Its size was: 4713 bytes[0m
+[0;32mI (75764) example:take_picture: Taking picture...[0m
+[0;32mI (75764) example:take_picture: Picture taken! Its size was: 4781 bytes[0m
+[0;32mI (76825) example:take_picture: Taking picture...[0m
+[0;32mI (76825) example:take_picture: Picture taken! Its size was: 4781 bytes[0m
+[0;32mI (77961) example:take_picture: Taking picture...[0m
+[0;32mI (77961) example:take_picture: Picture taken! Its size was: 4764 bytes[0m
+[0;32mI (78999) example:take_picture: Taking picture...[0m
+[0;32mI (78999) example:take_picture: Picture taken! Its size was: 4696 bytes[0m
+[0;32mI (80078) example:take_picture: Taking picture...[0m
+[0;32mI (80078) example:take_picture: Picture taken! Its size was: 4781 bytes[0m
+[0;32mI (81121) example:take_picture: Taking picture...[0m
+[0;32mI (81121) example:take_picture: Picture taken! Its size was: 4795 bytes[0m

@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "camera_example",
-    "project_version":    "6311974-dirty",
+    "project_version":    "4267bf9-dirty",
     "project_path":       "/home/ranoot/esp/esp_at",
     "idf_path":           "/home/ranoot/esp/esp-idf",
     "build_dir":          "/home/ranoot/esp/esp_at/build",

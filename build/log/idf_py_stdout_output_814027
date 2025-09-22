@@ -1,0 +1,661 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e6f4h ( 59124) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e71c vaddr=3fc94800 size=018fch (  6396) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355d8h (218584) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=00065600 vaddr=3fc960fc size=03cf8h ( 15608) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00069300 vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=00079a30 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (162) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (162) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (173) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (179) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (183) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (192) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (197) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (207) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (212) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (219) esp_psram: Speed: 80MHz[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (671) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  1e9db9078...[0m
+[0;32mI (685) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (689) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (693) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (697) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (707) heap_init: At 3FC9AFA0 len 0004E770 (313 KiB): RAM[0m
+[0;32mI (712) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (717) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (759) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (766) main_task: Started on CPU0[0m
+[0;32mI (769) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (777) main_task: Calling app_main()[0m
+[0;32mI (780) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (783) cam_hal: cam init ok[0m
+[0;32mI (785) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (789) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (804) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (804) camera: Detected OV2640 camera[0m
+[0;32mI (805) camera: Detected camera at address=0x30[0m
+[0;32mI (878) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (878) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (878) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (887) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (897) cam_hal: Allocating 76800 Byte frame buffer in PSRAM[0m
+[0;32mI (903) cam_hal: cam config ok[0m
+[0;32mI (905) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1206) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (1506) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (1841) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2179) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2306) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2458) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2721) example:take_picture: 0 Apriltags Found![0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (2945) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (3214) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (3523) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (3796) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4068) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4267) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4399) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4629) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4949) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (5273) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (5510) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (5510) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (5800) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (5800) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (6011) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (6011) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (6377) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (6377) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (6569) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (6569) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (6770) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (6770) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (6994) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (6995) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (7195) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (7195) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (7460) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (7460) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (7661) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (7662) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (7863) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (7863) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (8055) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (8055) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (8276) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (8276) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (8482) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (8483) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (8738) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (8738) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (8935) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (8935) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (9132) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (9133) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (9388) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (9388) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (9693) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10032) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10221) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10498) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11057) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11234) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11564) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11783) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11944) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12108) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12313) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12597) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12747) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13130) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13548) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13933) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14170) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14374) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14644) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14992) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15412) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15706) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (15707) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (15993) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (15993) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (15993) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (16247) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16603) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (16604) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (16604) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (16913) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (16914) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (17257) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (17257) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (17590) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (17591) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (17858) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (17858) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (18135) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (18135) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (18478) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (18478) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (18479) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (18745) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (18745) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (19010) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (19011) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (19251) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19463) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19928) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20186) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20590) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (20590) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (20884) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (20884) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (21098) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (21098) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (21380) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (21381) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (21703) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (21703) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (22060) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (22061) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (22355) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (22355) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (22595) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (22595) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (22911) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (22912) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (23186) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (23186) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (23186) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (23538) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (23538) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (23840) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (23840) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (24091) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (24091) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (24342) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (24342) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (24700) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (24700) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (24700) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (24986) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (24987) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (24987) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (25292) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (25292) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (25587) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (25587) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (25855) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26193) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (26193) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (26193) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (26517) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (26517) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (26869) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27168) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27517) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27897) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28372) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (28373) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (28373) example:take_picture: 2 Apriltags Found![0m
+[0;32mI (28641) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (28641) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (28931) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29321) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29661) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29879) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30186) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (30186) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (30379) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30757) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31128) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31469) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31790) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (31790) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (31993) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (31994) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (32280) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32550) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32891) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (32891) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (33068) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33376) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33719) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34074) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (34074) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (34377) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34613) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34927) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (34927) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (35132) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35562) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (35563) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (35802) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36044) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36285) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (36285) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (36646) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36964) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (36964) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (37275) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37516) example:take_picture: Apriltag found! ID=15[0m
+[0;32mI (37516) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (37810) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37991) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38233) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38484) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38761) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39059) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39313) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39648) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39805) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40066) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40288) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40413) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40554) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40997) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (40997) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (41285) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41607) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41930) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42360) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42696) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (42697) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (42866) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43210) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (43210) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (43491) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (43491) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (43685) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (43685) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (43876) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (43876) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (44088) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (44089) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (44332) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (44332) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (44524) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (44525) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (44725) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (44725) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (44933) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (44933) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (45189) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (45189) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (45529) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (45530) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (45764) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (45764) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (46093) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (46093) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (46401) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (46401) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (46757) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (46757) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (47054) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47401) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47631) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47910) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48126) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48336) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48566) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48815) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49035) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49395) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49801) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50121) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50397) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (50397) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (50669) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (50670) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (50961) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (50961) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (51177) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (51177) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (51415) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (51415) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (51598) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51787) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52134) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (52134) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (52369) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (52370) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (52599) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (52599) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (52825) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (52825) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (53116) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (53116) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (53558) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (53558) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (53898) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (53898) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (54122) example:take_picture: Apriltag found! ID=17[0m
+[0;32mI (54123) example:take_picture: 1 Apriltags Found![0m
+[0;32mI (54404) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54596) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54807) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54946) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55116) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55301) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55585) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55827) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56047) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56228) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56469) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56614) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56888) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57050) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57232) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57358) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57614) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57899) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58052) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58319) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58614) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59046) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59322) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59487) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59700) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59908) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60051) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60193) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60368) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60511) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60664) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60883) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61024) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61160) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61404) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61572) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61702) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61875) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62089) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62220) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62348) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62473) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62624) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62814) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62940) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63097) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63380) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63569) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63757) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63900) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64074) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64202) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64400) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64601) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64725) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64853) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64977) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65103) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65242) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65367) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65569) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65773) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65940) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66151) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66277) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66402) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66538) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66668) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66796) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66933) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67132) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67261) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67385) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67512) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67648) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67774) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67914) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68064) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68189) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68312) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68436) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68561) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68689) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68822) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68946) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69070) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69197) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69382) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69527) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69653) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69778) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69901) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70200) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70356) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70480) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70604) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70731) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70855) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71019) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71313) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71490) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71741) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72173) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72610) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72735) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72868) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73180) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73395) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73655) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73842) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74061) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74592) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74892) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75091) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75437) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75669) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75854) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75995) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76162) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76288) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76512) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76723) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77002) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77263) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77534) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77820) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78139) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78302) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78688) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78908) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79058) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79454) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79791) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80166) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80448) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80772) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81089) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81449) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81672) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81995) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82127) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82256) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82599) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82810) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83028) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83354) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83846) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83974) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84257) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84446) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84778) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84967) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85299) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85444) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85570) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86039) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86353) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86625) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86781) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86925) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87271) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87688) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88061) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88374) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88518) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88738) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88942) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89098) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89242) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89485) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89846) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90068) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90313) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90558) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90717) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90842) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90972) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91096) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91220) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91351) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91489) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91613) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91738) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91863) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91989) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92114) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92310) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92587) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92712) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92866) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93012) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93162) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93307) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93431) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93692) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93816) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93949) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94074) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94325) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94448) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94571) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94695) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94833) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94959) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95084) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95220) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95352) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95476) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95599) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95723) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95921) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96114) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96310) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96437) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96563) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96687) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96812) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96937) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97070) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97195) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97319) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97444) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97566) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97689) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97864) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98191) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98348) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98585) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98762) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99036) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99482) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99725) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100126) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100379) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100589) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100900) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101186) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101596) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101756) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101979) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102227) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102418) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102771) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103075) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103368) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103615) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103821) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104000) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104240) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104384) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104630) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104892) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105085) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105347) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105473) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105599) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105726) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105946) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106121) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106290) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106488) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106614) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106766) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106981) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107195) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107418) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107652) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107776) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107961) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108273) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108578) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108747) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108970) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109420) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109639) example:take_picture: 0 Apriltags Found![0m

@@ -1,0 +1,155 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048deb
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e744h ( 59204) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e76c vaddr=3fc94800 size=018ach (  6316) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355b4h (218548) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=000655dc vaddr=3fc960ac size=04eb8h ( 20152) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a49c vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007abcc vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (213) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  e4c675591...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (881) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (887) cam_hal: cam config ok[0m
+[0;32mI (889) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (968) example:take_picture: Taking picture...[0m
+[0;32mI (1001) example:take_picture: Picture taken! Its size was: 2873 bytes[0m
+[0;32mI (1085) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2085) example:take_picture: Taking picture...[0m
+[0;32mI (2085) example:take_picture: Picture taken! Its size was: 2818 bytes[0m
+[0;32mI (2184) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (3184) example:take_picture: Taking picture...[0m
+[0;32mI (3184) example:take_picture: Picture taken! Its size was: 2822 bytes[0m
+[0;32mI (3278) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4279) example:take_picture: Taking picture...[0m
+[0;32mI (4279) example:take_picture: Picture taken! Its size was: 2831 bytes[0m
+[0;32mI (4324) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (5324) example:take_picture: Taking picture...[0m
+[0;32mI (5324) example:take_picture: Picture taken! Its size was: 4324 bytes[0m
+[0;32mI (5415) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (6415) example:take_picture: Taking picture...[0m
+[0;32mI (6415) example:take_picture: Picture taken! Its size was: 4694 bytes[0m
+[0;32mI (6525) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (7526) example:take_picture: Taking picture...[0m
+[0;32mI (7526) example:take_picture: Picture taken! Its size was: 4694 bytes[0m
+[0;32mI (7582) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (8582) example:take_picture: Taking picture...[0m
+[0;32mI (8582) example:take_picture: Picture taken! Its size was: 4844 bytes[0m
+[0;32mI (8664) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9664) example:take_picture: Taking picture...[0m
+[0;32mI (9664) example:take_picture: Picture taken! Its size was: 5821 bytes[0m
+[0;32mI (9738) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10739) example:take_picture: Taking picture...[0m
+[0;32mI (10739) example:take_picture: Picture taken! Its size was: 5821 bytes[0m
+[0;32mI (10813) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11813) example:take_picture: Taking picture...[0m
+[0;32mI (11813) example:take_picture: Picture taken! Its size was: 6689 bytes[0m
+[0;32mI (11889) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12889) example:take_picture: Taking picture...[0m
+[0;32mI (12889) example:take_picture: Picture taken! Its size was: 6689 bytes[0m
+[0;32mI (12960) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13961) example:take_picture: Taking picture...[0m
+[0;32mI (13961) example:take_picture: Picture taken! Its size was: 6577 bytes[0m
+[0;32mI (14031) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15031) example:take_picture: Taking picture...[0m
+[0;32mI (15031) example:take_picture: Picture taken! Its size was: 6577 bytes[0m
+[0;32mI (15098) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16098) example:take_picture: Taking picture...[0m
+[0;32mI (16098) example:take_picture: Picture taken! Its size was: 6569 bytes[0m
+[0;32mI (16168) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17168) example:take_picture: Taking picture...[0m
+[0;32mI (17168) example:take_picture: Picture taken! Its size was: 6569 bytes[0m
+[0;32mI (17256) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18256) example:take_picture: Taking picture...[0m
+[0;32mI (18256) example:take_picture: Picture taken! Its size was: 6587 bytes[0m
+[0;32mI (18347) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19347) example:take_picture: Taking picture...[0m
+[0;32mI (19347) example:take_picture: Picture taken! Its size was: 6710 bytes[0m
+[0;32mI (19419) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20419) example:take_picture: Taking picture...[0m
+[0;32mI (20419) example:take_picture: Picture taken! Its size was: 3685 bytes[0m
+[0;32mI (20569) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21570) example:take_picture: Taking picture...[0m
+[0;32mI (21570) example:take_picture: Picture taken! Its size was: 3885 bytes[0m
+[0;32mI (21673) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22673) example:take_picture: Taking picture...[0m
+[0;32mI (22673) example:take_picture: Picture taken! Its size was: 4201 bytes[0m
+[0;32mI (22767) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23768) example:take_picture: Taking picture...[0m
+[0;32mI (23768) example:take_picture: Picture taken! Its size was: 4324 bytes[0m
+[0;32mI (23838) example:take_picture: 0 Apriltags Found![0m

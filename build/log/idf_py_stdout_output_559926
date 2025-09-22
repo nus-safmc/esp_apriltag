@@ -1,0 +1,389 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e754h ( 59220) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e77c vaddr=3fc94800 size=0189ch (  6300) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355f8h (218616) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=00065620 vaddr=3fc9609c size=04ec8h ( 20168) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a4f0 vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007ac20 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (176) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (203) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (213) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (668) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  3e3741eee...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (702) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (754) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (879) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (888) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (898) cam_hal: Allocating 76800 Byte frame buffer in PSRAM[0m
+[0;32mI (904) cam_hal: cam config ok[0m
+[0;32mI (906) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (978) example:take_picture: Taking picture...[0m
+[0;32mI (1039) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (1146) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (1646) example:take_picture: Taking picture...[0m
+[0;32mI (1646) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (1765) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2265) example:take_picture: Taking picture...[0m
+[0;32mI (2265) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (2363) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (2863) example:take_picture: Taking picture...[0m
+[0;32mI (2863) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (2948) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (3448) example:take_picture: Taking picture...[0m
+[0;32mI (3448) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (3506) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4006) example:take_picture: Taking picture...[0m
+[0;32mI (4006) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (4028) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4529) example:take_picture: Taking picture...[0m
+[0;32mI (4529) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (4558) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (5058) example:take_picture: Taking picture...[0m
+[0;32mI (5058) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (5141) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (5641) example:take_picture: Taking picture...[0m
+[0;32mI (5641) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (5667) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (6167) example:take_picture: Taking picture...[0m
+[0;32mI (6167) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (6233) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (6733) example:take_picture: Taking picture...[0m
+[0;32mI (6733) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (6807) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (7307) example:take_picture: Taking picture...[0m
+[0;32mI (7307) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (7351) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (7851) example:take_picture: Taking picture...[0m
+[0;32mI (7851) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (7919) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (8420) example:take_picture: Taking picture...[0m
+[0;32mI (8420) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (8485) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (8985) example:take_picture: Taking picture...[0m
+[0;32mI (8985) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (9051) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9551) example:take_picture: Taking picture...[0m
+[0;32mI (9551) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (9594) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10094) example:take_picture: Taking picture...[0m
+[0;32mI (10094) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (10131) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10631) example:take_picture: Taking picture...[0m
+[0;32mI (10631) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (10709) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11209) example:take_picture: Taking picture...[0m
+[0;32mI (11209) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (11286) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11786) example:take_picture: Taking picture...[0m
+[0;32mI (11786) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (11828) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12328) example:take_picture: Taking picture...[0m
+[0;32mI (12328) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (12404) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12904) example:take_picture: Taking picture...[0m
+[0;32mI (12904) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (13009) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13509) example:take_picture: Taking picture...[0m
+[0;32mI (13509) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (13593) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14094) example:take_picture: Taking picture...[0m
+[0;32mI (14094) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (14168) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14669) example:take_picture: Taking picture...[0m
+[0;32mI (14669) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (14791) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15291) example:take_picture: Taking picture...[0m
+[0;32mI (15291) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (15404) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15905) example:take_picture: Taking picture...[0m
+[0;32mI (15905) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (16010) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16510) example:take_picture: Taking picture...[0m
+[0;32mI (16510) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (16609) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17109) example:take_picture: Taking picture...[0m
+[0;32mI (17109) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (17203) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17704) example:take_picture: Taking picture...[0m
+[0;32mI (17704) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (17767) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18267) example:take_picture: Taking picture...[0m
+[0;32mI (18267) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (18334) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18834) example:take_picture: Taking picture...[0m
+[0;32mI (18834) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (18947) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19448) example:take_picture: Taking picture...[0m
+[0;32mI (19448) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (19576) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20077) example:take_picture: Taking picture...[0m
+[0;32mI (20077) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (20200) example:take_picture: 0 Apriltags Found![0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (20700) example:take_picture: Taking picture...[0m
+[0;32mI (20700) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (20836) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21336) example:take_picture: Taking picture...[0m
+[0;32mI (21336) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (21402) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21903) example:take_picture: Taking picture...[0m
+[0;32mI (21903) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (22010) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22510) example:take_picture: Taking picture...[0m
+[0;32mI (22510) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (22639) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23140) example:take_picture: Taking picture...[0m
+[0;32mI (23140) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (23269) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23769) example:take_picture: Taking picture...[0m
+[0;32mI (23769) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (23835) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24335) example:take_picture: Taking picture...[0m
+[0;32mI (24335) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (24451) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24951) example:take_picture: Taking picture...[0m
+[0;32mI (24951) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (25086) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25586) example:take_picture: Taking picture...[0m
+[0;32mI (25586) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (25743) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26243) example:take_picture: Taking picture...[0m
+[0;32mI (26243) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (26341) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26842) example:take_picture: Taking picture...[0m
+[0;32mI (26842) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (26969) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27469) example:take_picture: Taking picture...[0m
+[0;32mI (27469) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (27554) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28054) example:take_picture: Taking picture...[0m
+[0;32mI (28054) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (28161) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28661) example:take_picture: Taking picture...[0m
+[0;32mI (28661) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (28763) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29264) example:take_picture: Taking picture...[0m
+[0;32mI (29264) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (29383) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29883) example:take_picture: Taking picture...[0m
+[0;32mI (29883) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (30050) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30550) example:take_picture: Taking picture...[0m
+[0;32mI (30550) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (30673) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31174) example:take_picture: Taking picture...[0m
+[0;32mI (31174) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (31284) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31784) example:take_picture: Taking picture...[0m
+[0;32mI (31784) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (31885) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32385) example:take_picture: Taking picture...[0m
+[0;32mI (32385) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (32450) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32951) example:take_picture: Taking picture...[0m
+[0;32mI (32951) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (33037) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33538) example:take_picture: Taking picture...[0m
+[0;32mI (33538) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (33625) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34125) example:take_picture: Taking picture...[0m
+[0;32mI (34125) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (34227) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34727) example:take_picture: Taking picture...[0m
+[0;32mI (34727) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (34853) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35354) example:take_picture: Taking picture...[0m
+[0;32mI (35354) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (35467) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35967) example:take_picture: Taking picture...[0m
+[0;32mI (35967) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (36073) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36573) example:take_picture: Taking picture...[0m
+[0;32mI (36573) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (36670) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37170) example:take_picture: Taking picture...[0m
+[0;32mI (37170) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (37266) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37767) example:take_picture: Taking picture...[0m
+[0;32mI (37767) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (37869) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38369) example:take_picture: Taking picture...[0m
+[0;32mI (38369) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (38447) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38947) example:take_picture: Taking picture...[0m
+[0;32mI (38947) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (39030) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39530) example:take_picture: Taking picture...[0m
+[0;32mI (39530) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (39639) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40139) example:take_picture: Taking picture...[0m
+[0;32mI (40139) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (40217) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40718) example:take_picture: Taking picture...[0m
+[0;32mI (40718) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (40788) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41288) example:take_picture: Taking picture...[0m
+[0;32mI (41288) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (41384) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41885) example:take_picture: Taking picture...[0m
+[0;32mI (41885) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (42053) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42553) example:take_picture: Taking picture...[0m
+[0;32mI (42553) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (42642) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43143) example:take_picture: Taking picture...[0m
+[0;32mI (43143) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (43263) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43763) example:take_picture: Taking picture...[0m
+[0;32mI (43763) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (43858) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44358) example:take_picture: Taking picture...[0m
+[0;32mI (44358) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (44501) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45002) example:take_picture: Taking picture...[0m
+[0;32mI (45002) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (45123) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45623) example:take_picture: Taking picture...[0m
+[0;32mI (45623) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (45742) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46243) example:take_picture: Taking picture...[0m
+[0;32mI (46243) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (46390) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46890) example:take_picture: Taking picture...[0m
+[0;32mI (46890) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (47017) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47518) example:take_picture: Taking picture...[0m
+[0;32mI (47518) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (47635) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48135) example:take_picture: Taking picture...[0m
+[0;32mI (48135) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (48274) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48774) example:take_picture: Taking picture...[0m
+[0;32mI (48774) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (48934) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49434) example:take_picture: Taking picture...[0m
+[0;32mI (49434) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (49596) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50097) example:take_picture: Taking picture...[0m
+[0;32mI (50097) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (50248) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50748) example:take_picture: Taking picture...[0m
+[0;32mI (50748) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (50876) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51377) example:take_picture: Taking picture...[0m
+[0;32mI (51377) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (51500) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52000) example:take_picture: Taking picture...[0m
+[0;32mI (52000) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (52098) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52599) example:take_picture: Taking picture...[0m
+[0;32mI (52599) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (52700) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53200) example:take_picture: Taking picture...[0m
+[0;32mI (53200) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (53327) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53827) example:take_picture: Taking picture...[0m
+[0;32mI (53827) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (53964) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54464) example:take_picture: Taking picture...[0m
+[0;32mI (54464) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (54600) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55101) example:take_picture: Taking picture...[0m
+[0;32mI (55101) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (55207) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55708) example:take_picture: Taking picture...[0m
+[0;32mI (55708) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (55834) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56334) example:take_picture: Taking picture...[0m
+[0;32mI (56334) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (56439) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56940) example:take_picture: Taking picture...[0m
+[0;32mI (56940) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (57103) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57604) example:take_picture: Taking picture...[0m
+[0;32mI (57604) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (57814) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58314) example:take_picture: Taking picture...[0m
+[0;32mI (58314) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (58428) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58928) example:take_picture: Taking picture...[0m
+[0;32mI (58928) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (59104) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59605) example:take_picture: Taking picture...[0m
+[0;32mI (59605) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (59772) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60272) example:take_picture: Taking picture...[0m
+[0;32mI (60272) example:take_picture: Picture taken! Its size was: 76800 bytes (h=240, w=320)[0m
+[0;32mI (60364) example:take_picture: 0 Apriltags Found![0m

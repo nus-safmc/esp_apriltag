@@ -1,0 +1,215 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e6f4h ( 59124) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e71c vaddr=3fc94800 size=018fch (  6396) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355c0h (218560) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=000655e8 vaddr=3fc960fc size=04e68h ( 20072) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a458 vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007ab88 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (213) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  93efe17f3...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 3[0m
+[0;32mI (879) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 12, dma_buffer_size: 30720[0m
+[0;32mI (888) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 40[0m
+[0;32mI (898) cam_hal: Allocating 307200 Byte frame buffer in PSRAM[0m
+[0;32mI (904) cam_hal: cam config ok[0m
+[0;32mI (907) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (2435) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4301) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (6023) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (7665) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9078) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10313) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11713) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13128) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14216) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15757) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16955) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17933) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18937) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20227) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21597) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22762) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24053) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24943) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26139) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27546) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28631) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29915) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31122) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32205) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33386) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34346) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35343) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36376) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37690) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38703) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39657) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40620) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41497) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42974) example:take_picture: 0 Apriltags Found![0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (44374) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45776) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46981) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48060) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49192) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50136) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51136) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52341) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53711) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54723) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55128) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55608) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56088) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56571) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57051) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57530) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58006) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58489) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58971) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59445) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59929) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60407) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60889) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61366) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61847) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62325) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62803) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63286) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63779) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64249) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64724) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65204) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65686) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66162) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66641) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67124) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67603) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68085) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68563) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69043) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69527) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70006) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70485) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70965) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71447) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71925) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72403) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72884) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73363) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73845) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74324) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74804) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75284) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75767) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76244) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76725) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77203) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77683) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78162) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78646) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79128) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79607) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80091) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80571) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81054) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81535) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82011) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82493) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82974) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83778) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84250) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84734) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85213) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85689) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86174) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86650) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87131) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87609) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88091) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88574) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89052) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89528) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90015) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90489) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90970) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91453) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91932) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92418) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92897) example:take_picture: 0 Apriltags Found![0m

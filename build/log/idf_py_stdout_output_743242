@@ -1,0 +1,504 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e6e4h ( 59108) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e70c vaddr=3fc94800 size=0190ch (  6412) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355f8h (218616) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=00065620 vaddr=3fc9610c size=04e58h ( 20056) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a480 vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007abb0 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (212) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  90d739e0c...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (879) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 23040[0m
+[0;32mI (888) cam_hal: buffer_size: 23040, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 6, total_cnt: 10[0m
+[0;32mI (898) cam_hal: Allocating 57600 Byte frame buffer in PSRAM[0m
+[0;32mI (904) cam_hal: cam config ok[0m
+[0;32mI (906) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (1039) example:take_picture: avg_img=109[0m
+[0;32mI (1284) example:take_picture: avg_img=123[0m
+[0;32mI (1485) example:take_picture: avg_img=136[0m
+[0;32mI (1686) example:take_picture: avg_img=133[0m
+[0;32mI (1890) example:take_picture: avg_img=131[0m
+[0;32mI (2068) example:take_picture: avg_img=134[0m
+[0;32mI (2258) example:take_picture: avg_img=136[0m
+[0;32mI (2467) example:take_picture: avg_img=138[0m
+[0;32mI (2689) example:take_picture: avg_img=139[0m
+[0;32mI (2858) example:take_picture: avg_img=138[0m
+[0;32mI (3021) example:take_picture: avg_img=138[0m
+[0;32mI (3258) example:take_picture: avg_img=108[0m
+[0;32mI (3386) example:take_picture: avg_img=102[0m
+[0;32mI (3540) example:take_picture: avg_img=55[0m
+[0;32mI (3669) example:take_picture: avg_img=86[0m
+[0;32mI (3809) example:take_picture: avg_img=74[0m
+[0;32mI (4034) example:take_picture: avg_img=49[0m
+[0;32mI (4226) example:take_picture: avg_img=40[0m
+[0;32mI (4482) example:take_picture: avg_img=33[0m
+[0;32mI (4664) example:take_picture: avg_img=28[0m
+[0;32mI (4892) example:take_picture: avg_img=25[0m
+[0;32mI (5068) example:take_picture: avg_img=22[0m
+[0;32mI (5279) example:take_picture: avg_img=20[0m
+[0;32mI (5484) example:take_picture: avg_img=18[0m
+[0;32mI (5758) example:take_picture: avg_img=16[0m
+[0;32mI (5918) example:take_picture: avg_img=15[0m
+[0;32mI (6102) example:take_picture: avg_img=14[0m
+[0;32mI (6223) example:take_picture: avg_img=13[0m
+[0;32mI (6448) example:take_picture: avg_img=12[0m
+[0;32mI (6586) example:take_picture: avg_img=12[0m
+[0;32mI (6736) example:take_picture: avg_img=11[0m
+[0;32mI (6905) example:take_picture: avg_img=10[0m
+[0;32mI (7085) example:take_picture: avg_img=10[0m
+[0;32mI (7211) example:take_picture: avg_img=10[0m
+[0;32mI (7358) example:take_picture: avg_img=10[0m
+[0;32mI (7538) example:take_picture: avg_img=10[0m
+[0;32mI (7768) example:take_picture: avg_img=10[0m
+[0;32mI (7933) example:take_picture: avg_img=10[0m
+[0;32mI (8055) example:take_picture: avg_img=10[0m
+[0;32mI (8216) example:take_picture: avg_img=10[0m
+[0;32mI (8337) example:take_picture: avg_img=10[0m
+[0;32mI (8547) example:take_picture: avg_img=149[0m
+[0;32mI (8684) example:take_picture: avg_img=200[0m
+[0;32mI (8867) example:take_picture: avg_img=137[0m
+[0;32mI (8997) example:take_picture: avg_img=51[0m
+[0;32mI (9119) example:take_picture: avg_img=86[0m
+[0;32mI (9298) example:take_picture: avg_img=77[0m
+[0;32mI (9448) example:take_picture: avg_img=108[0m
+[0;32mI (9585) example:take_picture: avg_img=44[0m
+[0;32mI (9767) example:take_picture: avg_img=35[0m
+[0;32mI (9918) example:take_picture: avg_img=31[0m
+[0;32mI (10183) example:take_picture: avg_img=28[0m
+[0;32mI (10385) example:take_picture: avg_img=45[0m
+[0;32mI (10605) example:take_picture: avg_img=38[0m
+[0;32mI (10829) example:take_picture: avg_img=38[0m
+[0;32mI (11038) example:take_picture: avg_img=38[0m
+[0;32mI (11271) example:take_picture: avg_img=38[0m
+[0;32mI (11508) example:take_picture: avg_img=39[0m
+[0;32mI (11711) example:take_picture: avg_img=41[0m
+[0;32mI (11833) example:take_picture: avg_img=42[0m
+[0;32mI (12028) example:take_picture: avg_img=42[0m
+[0;32mI (12193) example:take_picture: avg_img=42[0m
+[0;32mI (12408) example:take_picture: avg_img=42[0m
+[0;32mI (12697) example:take_picture: avg_img=165[0m
+[0;32mI (12915) example:take_picture: avg_img=172[0m
+[0;32mI (13103) example:take_picture: avg_img=164[0m
+[0;32mI (13327) example:take_picture: avg_img=155[0m
+[0;32mI (13493) example:take_picture: avg_img=146[0m
+[0;32mI (13717) example:take_picture: avg_img=135[0m
+[0;32mI (13947) example:take_picture: avg_img=106[0m
+[0;32mI (14149) example:take_picture: avg_img=140[0m
+[0;32mI (14378) example:take_picture: avg_img=144[0m
+[0;32mI (14588) example:take_picture: avg_img=138[0m
+[0;32mI (14816) example:take_picture: avg_img=138[0m
+[0;32mI (15030) example:take_picture: avg_img=138[0m
+[0;32mI (15254) example:take_picture: avg_img=138[0m
+[0;32mI (15451) example:take_picture: avg_img=138[0m
+[0;32mI (15695) example:take_picture: avg_img=121[0m
+[0;32mI (15876) example:take_picture: avg_img=129[0m
+[0;32mI (16079) example:take_picture: avg_img=93[0m
+[0;32mI (16250) example:take_picture: avg_img=57[0m
+[0;32mI (16410) example:take_picture: avg_img=75[0m
+[0;32mI (16538) example:take_picture: avg_img=106[0m
+[0;32mI (16704) example:take_picture: avg_img=128[0m
+[0;32mI (16861) example:take_picture: avg_img=135[0m
+[0;32mI (16985) example:take_picture: avg_img=128[0m
+[0;32mI (17147) example:take_picture: avg_img=197[0m
+[0;32mI (17303) example:take_picture: avg_img=198[0m
+[0;32mI (17477) example:take_picture: avg_img=191[0m
+[0;32mI (17724) example:take_picture: avg_img=176[0m
+[0;32mI (17968) example:take_picture: avg_img=163[0m
+[0;32mI (18188) example:take_picture: avg_img=150[0m
+[0;32mI (18359) example:take_picture: avg_img=150[0m
+[0;32mI (18619) example:take_picture: avg_img=142[0m
+[0;32mI (18839) example:take_picture: avg_img=141[0m
+[0;32mI (19087) example:take_picture: avg_img=140[0m
+[0;32mI (19265) example:take_picture: avg_img=140[0m
+[0;32mI (19517) example:take_picture: avg_img=139[0m
+[0;32mI (19726) example:take_picture: avg_img=139[0m
+[0;32mI (19936) example:take_picture: avg_img=115[0m
+[0;32mI (20080) example:take_picture: avg_img=142[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (20352) example:take_picture: avg_img=141[0m
+[0;32mI (20555) example:take_picture: avg_img=140[0m
+[0;32mI (20681) example:take_picture: avg_img=142[0m
+[0;32mI (20845) example:take_picture: avg_img=139[0m
+[0;32mI (20968) example:take_picture: avg_img=141[0m
+[0;32mI (21102) example:take_picture: avg_img=169[0m
+[0;32mI (21223) example:take_picture: avg_img=183[0m
+[0;32mI (21343) example:take_picture: avg_img=174[0m
+[0;32mI (21462) example:take_picture: avg_img=182[0m
+[0;32mI (21587) example:take_picture: avg_img=214[0m
+[0;32mI (21713) example:take_picture: avg_img=191[0m
+[0;32mI (21855) example:take_picture: avg_img=186[0m
+[0;32mI (21996) example:take_picture: avg_img=188[0m
+[0;32mI (22120) example:take_picture: avg_img=180[0m
+[0;32mI (22266) example:take_picture: avg_img=203[0m
+[0;32mI (22389) example:take_picture: avg_img=144[0m
+[0;32mI (22509) example:take_picture: avg_img=176[0m
+[0;32mI (22629) example:take_picture: avg_img=177[0m
+[0;32mI (22748) example:take_picture: avg_img=168[0m
+[0;32mI (22889) example:take_picture: avg_img=155[0m
+[0;32mI (23008) example:take_picture: avg_img=118[0m
+[0;32mI (23159) example:take_picture: avg_img=94[0m
+[0;32mI (23279) example:take_picture: avg_img=94[0m
+[0;32mI (23407) example:take_picture: avg_img=136[0m
+[0;32mI (23535) example:take_picture: avg_img=125[0m
+[0;32mI (23654) example:take_picture: avg_img=112[0m
+[0;32mI (23811) example:take_picture: avg_img=109[0m
+[0;32mI (23942) example:take_picture: avg_img=109[0m
+[0;32mI (24062) example:take_picture: avg_img=107[0m
+[0;32mI (24181) example:take_picture: avg_img=106[0m
+[0;32mI (24300) example:take_picture: avg_img=110[0m
+[0;32mI (24420) example:take_picture: avg_img=107[0m
+[0;32mI (24539) example:take_picture: avg_img=100[0m
+[0;32mI (24663) example:take_picture: avg_img=92[0m
+[0;32mI (24795) example:take_picture: avg_img=88[0m
+[0;32mI (24920) example:take_picture: avg_img=75[0m
+[0;32mI (25041) example:take_picture: avg_img=57[0m
+[0;32mI (25161) example:take_picture: avg_img=35[0m
+[0;32mI (25350) example:take_picture: avg_img=163[0m
+[0;32mI (25489) example:take_picture: avg_img=160[0m
+[0;32mI (25624) example:take_picture: avg_img=150[0m
+[0;32mI (25781) example:take_picture: avg_img=141[0m
+[0;32mI (25915) example:take_picture: avg_img=134[0m
+[0;32mI (26046) example:take_picture: avg_img=132[0m
+[0;32mI (26188) example:take_picture: avg_img=123[0m
+[0;32mI (26319) example:take_picture: avg_img=113[0m
+[0;32mI (26453) example:take_picture: avg_img=102[0m
+[0;32mI (26581) example:take_picture: avg_img=98[0m
+[0;32mI (26724) example:take_picture: avg_img=104[0m
+[0;32mI (26867) example:take_picture: avg_img=104[0m
+[0;32mI (27015) example:take_picture: avg_img=106[0m
+[0;32mI (27164) example:take_picture: avg_img=103[0m
+[0;32mI (27306) example:take_picture: avg_img=104[0m
+[0;32mI (27461) example:take_picture: avg_img=105[0m
+[0;32mI (27591) example:take_picture: avg_img=101[0m
+[0;32mI (27725) example:take_picture: avg_img=103[0m
+[0;32mI (27851) example:take_picture: avg_img=103[0m
+[0;32mI (27980) example:take_picture: avg_img=105[0m
+[0;32mI (28102) example:take_picture: avg_img=109[0m
+[0;32mI (28234) example:take_picture: avg_img=109[0m
+[0;32mI (28362) example:take_picture: avg_img=104[0m
+[0;32mI (28496) example:take_picture: avg_img=100[0m
+[0;32mI (28615) example:take_picture: avg_img=104[0m
+[0;32mI (28734) example:take_picture: avg_img=103[0m
+[0;32mI (28853) example:take_picture: avg_img=102[0m
+[0;32mI (28971) example:take_picture: avg_img=103[0m
+[0;32mI (29089) example:take_picture: avg_img=101[0m
+[0;32mI (29208) example:take_picture: avg_img=101[0m
+[0;32mI (29327) example:take_picture: avg_img=101[0m
+[0;32mI (29446) example:take_picture: avg_img=101[0m
+[0;32mI (29565) example:take_picture: avg_img=99[0m
+[0;32mI (29703) example:take_picture: avg_img=102[0m
+[0;32mI (29830) example:take_picture: avg_img=100[0m
+[0;32mI (29949) example:take_picture: avg_img=100[0m
+[0;32mI (30077) example:take_picture: avg_img=102[0m
+[0;32mI (30204) example:take_picture: avg_img=102[0m
+[0;32mI (30334) example:take_picture: avg_img=102[0m
+[0;32mI (30468) example:take_picture: avg_img=103[0m
+[0;32mI (30620) example:take_picture: avg_img=101[0m
+[0;32mI (30790) example:take_picture: avg_img=99[0m
+[0;32mI (30940) example:take_picture: avg_img=100[0m
+[0;32mI (31059) example:take_picture: avg_img=97[0m
+[0;32mI (31178) example:take_picture: avg_img=97[0m
+[0;32mI (31321) example:take_picture: avg_img=94[0m
+[0;32mI (31460) example:take_picture: avg_img=98[0m
+[0;32mI (31579) example:take_picture: avg_img=97[0m
+[0;32mI (31705) example:take_picture: avg_img=101[0m
+[0;32mI (31838) example:take_picture: avg_img=101[0m
+[0;32mI (31969) example:take_picture: avg_img=111[0m
+[0;32mI (32109) example:take_picture: avg_img=116[0m
+[0;32mI (32244) example:take_picture: avg_img=136[0m
+[0;32mI (32384) example:take_picture: avg_img=135[0m
+[0;32mI (32526) example:take_picture: avg_img=183[0m
+[0;32mI (32710) example:take_picture: avg_img=188[0m
+[0;32mI (32917) example:take_picture: avg_img=209[0m
+[0;32mI (33035) example:take_picture: avg_img=211[0m
+[0;32mI (33152) example:take_picture: avg_img=193[0m
+[0;32mI (33269) example:take_picture: avg_img=184[0m
+[0;32mI (33387) example:take_picture: avg_img=173[0m
+[0;32mI (33505) example:take_picture: avg_img=167[0m
+[0;32mI (33635) example:take_picture: avg_img=163[0m
+[0;32mI (33760) example:take_picture: avg_img=168[0m
+[0;32mI (33886) example:take_picture: avg_img=175[0m
+[0;32mI (34003) example:take_picture: avg_img=177[0m
+[0;32mI (34134) example:take_picture: avg_img=169[0m
+[0;32mI (34258) example:take_picture: avg_img=163[0m
+[0;32mI (34382) example:take_picture: avg_img=155[0m
+[0;32mI (34505) example:take_picture: avg_img=151[0m
+[0;32mI (34628) example:take_picture: avg_img=136[0m
+[0;32mI (34747) example:take_picture: avg_img=56[0m
+[0;32mI (34889) example:take_picture: avg_img=28[0m
+[0;32mI (35039) example:take_picture: avg_img=73[0m
+[0;32mI (35184) example:take_picture: avg_img=175[0m
+[0;32mI (35403) example:take_picture: avg_img=168[0m
+[0;32mI (35631) example:take_picture: avg_img=158[0m
+[0;32mI (35811) example:take_picture: avg_img=146[0m
+[0;32mI (36024) example:take_picture: avg_img=134[0m
+[0;32mI (36206) example:take_picture: avg_img=92[0m
+[0;32mI (36325) example:take_picture: avg_img=91[0m
+[0;32mI (36444) example:take_picture: avg_img=98[0m
+[0;32mI (36562) example:take_picture: avg_img=148[0m
+[0;32mI (36770) example:take_picture: avg_img=205[0m
+[0;32mI (36894) example:take_picture: avg_img=158[0m
+[0;32mI (37014) example:take_picture: avg_img=121[0m
+[0;32mI (37134) example:take_picture: avg_img=45[0m
+[0;32mI (37254) example:take_picture: avg_img=206[0m
+[0;32mI (37481) example:take_picture: avg_img=151[0m
+[0;32mI (37655) example:take_picture: avg_img=132[0m
+[0;32mI (37897) example:take_picture: avg_img=146[0m
+[0;32mI (38066) example:take_picture: avg_img=181[0m
+[0;32mI (38185) example:take_picture: avg_img=209[0m
+[0;32mI (38304) example:take_picture: avg_img=179[0m
+[0;32mI (38423) example:take_picture: avg_img=182[0m
+[0;32mI (38541) example:take_picture: avg_img=188[0m
+[0;32mI (38659) example:take_picture: avg_img=184[0m
+[0;32mI (38777) example:take_picture: avg_img=160[0m
+[0;32mI (38896) example:take_picture: avg_img=146[0m
+[0;32mI (39015) example:take_picture: avg_img=153[0m
+[0;32mI (39133) example:take_picture: avg_img=170[0m
+[0;32mI (39251) example:take_picture: avg_img=160[0m
+[0;32mI (39370) example:take_picture: avg_img=129[0m
+[0;32mI (39488) example:take_picture: avg_img=137[0m
+[0;32mI (39607) example:take_picture: avg_img=122[0m
+[0;32mI (39726) example:take_picture: avg_img=120[0m
+[0;32mI (39845) example:take_picture: avg_img=123[0m
+[0;32mI (39964) example:take_picture: avg_img=138[0m
+[0;32mI (40083) example:take_picture: avg_img=154[0m
+[0;32mI (40202) example:take_picture: avg_img=151[0m
+[0;32mI (40344) example:take_picture: avg_img=140[0m
+[0;32mI (40467) example:take_picture: avg_img=136[0m
+[0;32mI (40586) example:take_picture: avg_img=135[0m
+[0;32mI (40707) example:take_picture: avg_img=142[0m
+[0;32mI (40826) example:take_picture: avg_img=28[0m
+[0;32mI (40993) example:take_picture: avg_img=28[0m
+[0;32mI (41147) example:take_picture: avg_img=71[0m
+[0;32mI (41288) example:take_picture: avg_img=143[0m
+[0;32mI (41429) example:take_picture: avg_img=139[0m
+[0;32mI (41568) example:take_picture: avg_img=133[0m
+[0;32mI (41710) example:take_picture: avg_img=130[0m
+[0;32mI (41858) example:take_picture: avg_img=124[0m
+[0;32mI (42003) example:take_picture: avg_img=119[0m
+[0;32mI (42161) example:take_picture: avg_img=113[0m
+[0;32mI (42325) example:take_picture: avg_img=109[0m
+[0;32mI (42483) example:take_picture: avg_img=106[0m
+[0;32mI (42632) example:take_picture: avg_img=107[0m
+[0;32mI (42793) example:take_picture: avg_img=108[0m
+[0;32mI (42954) example:take_picture: avg_img=115[0m
+[0;32mI (43123) example:take_picture: avg_img=109[0m
+[0;32mI (43303) example:take_picture: avg_img=105[0m
+[0;32mI (43449) example:take_picture: avg_img=123[0m
+[0;32mI (43621) example:take_picture: avg_img=121[0m
+[0;32mI (43803) example:take_picture: avg_img=122[0m
+[0;32mI (43981) example:take_picture: avg_img=118[0m
+[0;32mI (44164) example:take_picture: avg_img=118[0m
+[0;32mI (44363) example:take_picture: avg_img=118[0m
+[0;32mI (44547) example:take_picture: avg_img=118[0m
+[0;32mI (44749) example:take_picture: avg_img=119[0m
+[0;32mI (44931) example:take_picture: avg_img=122[0m
+[0;32mI (45122) example:take_picture: avg_img=153[0m
+[0;32mI (45357) example:take_picture: avg_img=157[0m
+[0;32mI (45554) example:take_picture: avg_img=155[0m
+[0;32mI (45807) example:take_picture: avg_img=140[0m
+[0;32mI (46034) example:take_picture: avg_img=142[0m
+[0;32mI (46289) example:take_picture: avg_img=142[0m
+[0;32mI (46497) example:take_picture: avg_img=141[0m
+[0;32mI (46742) example:take_picture: avg_img=141[0m
+[0;32mI (46987) example:take_picture: avg_img=140[0m
+[0;32mI (47245) example:take_picture: avg_img=117[0m
+[0;32mI (47442) example:take_picture: avg_img=48[0m
+[0;32mI (47598) example:take_picture: avg_img=72[0m
+[0;32mI (47850) example:take_picture: avg_img=39[0m
+[0;32mI (48071) example:take_picture: avg_img=35[0m
+[0;32mI (48258) example:take_picture: avg_img=33[0m
+[0;32mI (48442) example:take_picture: avg_img=29[0m
+[0;32mI (48655) example:take_picture: avg_img=31[0m
+[0;32mI (48814) example:take_picture: avg_img=60[0m
+[0;32mI (49023) example:take_picture: avg_img=65[0m
+[0;32mI (49209) example:take_picture: avg_img=77[0m
+[0;32mI (49408) example:take_picture: avg_img=53[0m
+[0;32mI (49609) example:take_picture: avg_img=50[0m
+[0;32mI (49827) example:take_picture: avg_img=47[0m
+[0;32mI (50005) example:take_picture: avg_img=44[0m
+[0;32mI (50259) example:take_picture: avg_img=40[0m
+[0;32mI (50514) example:take_picture: avg_img=38[0m
+[0;32mI (50690) example:take_picture: avg_img=39[0m
+[0;32mI (50910) example:take_picture: avg_img=40[0m
+[0;32mI (51123) example:take_picture: avg_img=43[0m
+[0;32mI (51365) example:take_picture: avg_img=73[0m
+[0;32mI (51578) example:take_picture: avg_img=107[0m
+[0;32mI (51732) example:take_picture: avg_img=204[0m
+[0;32mI (51900) example:take_picture: avg_img=166[0m
+[0;32mI (52120) example:take_picture: avg_img=156[0m
+[0;32mI (52342) example:take_picture: avg_img=149[0m
+[0;32mI (52558) example:take_picture: avg_img=140[0m
+[0;32mI (52789) example:take_picture: avg_img=140[0m
+[0;32mI (53010) example:take_picture: avg_img=136[0m
+[0;32mI (53251) example:take_picture: avg_img=136[0m
+[0;32mI (53475) example:take_picture: avg_img=135[0m
+[0;32mI (53702) example:take_picture: avg_img=136[0m
+[0;32mI (53913) example:take_picture: avg_img=134[0m
+[0;32mI (54150) example:take_picture: avg_img=133[0m
+[0;32mI (54357) example:take_picture: avg_img=133[0m
+[0;32mI (54557) example:take_picture: avg_img=132[0m
+[0;32mI (54800) example:take_picture: avg_img=132[0m
+[0;32mI (55019) example:take_picture: avg_img=132[0m
+[0;32mI (55261) example:take_picture: avg_img=93[0m
+[0;32mI (55395) example:take_picture: avg_img=59[0m
+[0;32mI (55593) example:take_picture: avg_img=74[0m
+[0;32mI (55852) example:take_picture: avg_img=61[0m
+[0;32mI (55994) example:take_picture: avg_img=58[0m
+[0;32mI (56266) example:take_picture: avg_img=52[0m
+[0;32mI (56527) example:take_picture: avg_img=48[0m
+[0;32mI (56689) example:take_picture: avg_img=46[0m
+[0;32mI (56924) example:take_picture: avg_img=45[0m
+[0;32mI (57164) example:take_picture: avg_img=42[0m
+[0;32mI (57360) example:take_picture: avg_img=40[0m
+[0;32mI (57537) example:take_picture: avg_img=39[0m
+[0;32mI (57753) example:take_picture: avg_img=40[0m
+[0;32mI (57902) example:take_picture: avg_img=42[0m
+[0;32mI (58095) example:take_picture: avg_img=44[0m
+[0;32mI (58326) example:take_picture: avg_img=45[0m
+[0;32mI (58510) example:take_picture: avg_img=46[0m
+[0;32mI (58706) example:take_picture: avg_img=47[0m
+[0;32mI (58950) example:take_picture: avg_img=48[0m
+[0;32mI (59122) example:take_picture: avg_img=50[0m
+[0;32mI (59328) example:take_picture: avg_img=51[0m
+[0;32mI (59483) example:take_picture: avg_img=51[0m
+[0;32mI (59733) example:take_picture: avg_img=51[0m
+[0;32mI (59877) example:take_picture: avg_img=51[0m
+[0;32mI (60108) example:take_picture: avg_img=51[0m
+[0;32mI (60336) example:take_picture: avg_img=52[0m
+[0;32mI (60525) example:take_picture: avg_img=52[0m
+[0;32mI (60746) example:take_picture: avg_img=53[0m
+[0;32mI (60967) example:take_picture: avg_img=65[0m
+[0;32mI (61151) example:take_picture: avg_img=84[0m
+[0;32mI (61348) example:take_picture: avg_img=119[0m
+[0;32mI (61498) example:take_picture: avg_img=197[0m
+[0;32mI (61706) example:take_picture: avg_img=161[0m
+[0;32mI (61910) example:take_picture: avg_img=153[0m
+[0;32mI (62143) example:take_picture: avg_img=146[0m
+[0;32mI (62363) example:take_picture: avg_img=138[0m
+[0;32mI (62596) example:take_picture: avg_img=139[0m
+[0;32mI (62835) example:take_picture: avg_img=139[0m
+[0;32mI (63042) example:take_picture: avg_img=138[0m
+[0;32mI (63229) example:take_picture: avg_img=138[0m
+[0;32mI (63400) example:take_picture: avg_img=138[0m
+[0;32mI (63635) example:take_picture: avg_img=138[0m
+[0;32mI (63879) example:take_picture: avg_img=138[0m
+[0;32mI (64066) example:take_picture: avg_img=132[0m
+[0;32mI (64309) example:take_picture: avg_img=77[0m
+[0;32mI (64430) example:take_picture: avg_img=111[0m
+[0;32mI (64650) example:take_picture: avg_img=87[0m
+[0;32mI (64822) example:take_picture: avg_img=90[0m
+[0;32mI (65070) example:take_picture: avg_img=90[0m
+[0;32mI (65259) example:take_picture: avg_img=98[0m
+[0;32mI (65429) example:take_picture: avg_img=134[0m
+[0;32mI (65576) example:take_picture: avg_img=166[0m
+[0;32mI (65788) example:take_picture: avg_img=164[0m
+[0;32mI (66043) example:take_picture: avg_img=153[0m
+[0;32mI (66236) example:take_picture: avg_img=147[0m
+[0;32mI (66495) example:take_picture: avg_img=142[0m
+[0;32mI (66682) example:take_picture: avg_img=140[0m
+[0;32mI (66938) example:take_picture: avg_img=139[0m
+[0;32mI (67111) example:take_picture: avg_img=139[0m
+[0;32mI (67293) example:take_picture: avg_img=139[0m
+[0;32mI (67501) example:take_picture: avg_img=140[0m
+[0;32mI (67742) example:take_picture: avg_img=142[0m
+[0;32mI (67978) example:take_picture: avg_img=142[0m
+[0;32mI (68219) example:take_picture: avg_img=142[0m
+[0;32mI (68410) example:take_picture: avg_img=142[0m
+[0;32mI (68614) example:take_picture: avg_img=142[0m
+[0;32mI (68846) example:take_picture: avg_img=142[0m
+[0;32mI (69069) example:take_picture: avg_img=142[0m
+[0;32mI (69338) example:take_picture: avg_img=142[0m
+[0;32mI (69563) example:take_picture: avg_img=142[0m
+[0;32mI (69813) example:take_picture: avg_img=142[0m
+[0;32mI (70062) example:take_picture: avg_img=142[0m
+[0;32mI (70266) example:take_picture: avg_img=142[0m
+[0;32mI (70494) example:take_picture: avg_img=142[0m
+[0;32mI (70700) example:take_picture: avg_img=142[0m
+[0;32mI (70936) example:take_picture: avg_img=142[0m
+[0;32mI (71159) example:take_picture: avg_img=141[0m
+[0;32mI (71366) example:take_picture: avg_img=142[0m
+[0;32mI (71606) example:take_picture: avg_img=141[0m
+[0;32mI (71876) example:take_picture: avg_img=142[0m
+[0;32mI (72140) example:take_picture: avg_img=141[0m
+[0;32mI (72398) example:take_picture: avg_img=142[0m
+[0;32mI (72645) example:take_picture: avg_img=141[0m
+[0;32mI (72884) example:take_picture: avg_img=141[0m
+[0;32mI (73114) example:take_picture: avg_img=142[0m
+[0;32mI (73374) example:take_picture: avg_img=142[0m

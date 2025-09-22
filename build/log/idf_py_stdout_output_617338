@@ -1,0 +1,596 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048ee5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=0e6f4h ( 59124) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002e71c vaddr=3fc94800 size=018fch (  6396) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=355b4h (218548) map[0m
+[0;32mI (138) esp_image: segment 3: paddr=000655dc vaddr=3fc960fc size=04e68h ( 20072) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=0006a44c vaddr=40374000 size=10728h ( 67368) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0007ab7c vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (173) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (174) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (175) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (180) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (184) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (188) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (193) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (202) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (208) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (213) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (216) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (220) esp_psram: Speed: 80MHz[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (667) app_init: Application information:[0m
+[0;32mI (667) app_init: Project name:     camera_example[0m
+[0;32mI (672) app_init: App version:      4267bf9-dirty[0m
+[0;32mI (676) app_init: Compile time:     Sep 22 2025 19:50:58[0m
+[0;32mI (681) app_init: ELF file SHA256:  8114b0862...[0m
+[0;32mI (686) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (690) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (694) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (698) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (701) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (708) heap_init: At 3FC9C110 len 0004D600 (309 KiB): RAM[0m
+[0;32mI (713) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (718) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (735) spi_flash: detected chip: gd[0m
+[0;32mI (738) spi_flash: flash io: qio[0m
+[0;33mW (741) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (753) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (760) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) main_task: Started on CPU0[0m
+[0;32mI (770) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) main_task: Calling app_main()[0m
+[0;32mI (781) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (784) cam_hal: cam init ok[0m
+[0;32mI (786) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (790) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (805) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (805) camera: Detected OV2640 camera[0m
+[0;32mI (806) camera: Detected camera at address=0x30[0m
+[0;32mI (879) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (879) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (879) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (888) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (898) cam_hal: Allocating 76800 Byte frame buffer in PSRAM[0m
+[0;32mI (904) cam_hal: cam config ok[0m
+[0;32mI (906) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (1100) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (1343) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (1558) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4714) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (4904) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (8498) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (8670) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9117) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9269) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9405) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9546) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9697) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9845) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (9965) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10132) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10291) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10466) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10607) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10771) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (10941) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11083) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11248) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11422) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11572) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11747) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (11982) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12227) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12425) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12572) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12719) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (12870) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13050) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13230) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13396) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13568) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13736) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (13916) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14084) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14247) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14423) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14626) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (14798) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15005) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15233) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15420) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15561) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15750) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (15933) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16126) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16310) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16497) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16698) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (16912) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17130) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17345) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17555) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17745) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (17934) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18114) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18300) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18466) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18654) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (18851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19048) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19220) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19458) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19691) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (19932) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20170) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20418) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20602) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20789) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (20988) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21169) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21341) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21497) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21690) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (21844) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22038) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22180) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22338) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22542) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22730) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (22962) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23177) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23429) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23691) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (23961) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24194) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24431) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24599) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24771) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (24960) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25142) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25290) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25462) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25666) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25799) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (25960) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26159) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26311) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26501) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26714) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (26883) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27049) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27210) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27398) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27577) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27734) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (27893) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28092) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28261) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28421) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28648) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (28851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29038) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29227) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29394) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29569) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29722) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (29870) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30050) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30232) example:take_picture: 0 Apriltags Found![0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (30519) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30697) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (30854) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31003) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31214) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31389) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31604) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (31784) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32000) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32193) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32406) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32617) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32836) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (32987) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33225) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33396) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33621) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (33834) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34029) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34297) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34545) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34747) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (34983) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35185) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35401) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35618) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (35844) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36080) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36302) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36520) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36699) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (36942) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37177) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37418) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37617) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37810) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (37988) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38218) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38465) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38648) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (38845) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39001) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39180) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39342) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39512) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39698) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (39864) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40080) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40320) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40529) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40704) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (40868) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41065) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41238) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41383) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41578) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41775) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (41954) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42136) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42295) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42469) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42670) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (42847) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43022) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43207) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43394) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43571) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43773) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (43952) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44170) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44382) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44604) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44795) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (44996) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45210) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45419) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45614) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (45797) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46015) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46392) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46649) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (46885) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47077) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47301) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47522) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47750) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (47937) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48141) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48384) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48609) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (48845) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49026) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49189) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49373) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49554) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49781) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (49964) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50180) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50316) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50491) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50646) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50802) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (50999) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51187) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51395) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51543) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51727) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (51897) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52073) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52281) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52475) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52637) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (52813) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53021) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53202) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53370) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53527) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53674) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (53874) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54044) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54370) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54547) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54725) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (54895) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55076) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55235) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55443) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55607) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55787) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (55967) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56155) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56341) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56541) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56722) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (56913) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57103) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57298) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57479) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57627) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (57851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58091) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58243) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58486) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58680) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (58885) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59102) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59303) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59530) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59754) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (59969) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60191) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60381) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60569) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60772) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (60988) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61162) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61393) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61543) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61747) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (61981) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62174) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62380) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62608) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (62836) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63031) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63238) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63419) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63603) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (63800) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64009) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64197) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64388) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64568) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64788) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (64961) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65164) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65376) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65582) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65757) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (65935) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66084) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66248) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66428) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66608) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (66802) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67025) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67222) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67400) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67595) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (67803) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68010) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68206) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68410) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68602) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68793) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (68937) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69106) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69278) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69441) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69616) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69767) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (69929) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70123) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70300) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70489) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70665) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (70856) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71065) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71275) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71506) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (71770) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72003) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72221) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72523) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (72763) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73026) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73208) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73403) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73634) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (73857) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74105) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74302) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74532) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74744) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (74983) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75260) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75554) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (75823) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76026) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76256) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76538) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (76836) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77132) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77397) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77637) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (77832) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78028) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78263) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78526) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78765) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (78968) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79167) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79343) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79592) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79766) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (79997) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80241) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80522) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (80805) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81047) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81226) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81484) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81729) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (81918) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82170) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82466) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82730) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (82944) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83248) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83486) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (83787) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84051) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84301) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84559) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (84851) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85075) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85299) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85524) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85686) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (85950) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86189) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86433) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86650) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (86911) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87129) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87279) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87492) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87712) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (87938) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88172) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88430) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88717) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (88927) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89491) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89727) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (89957) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90130) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90411) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90573) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (90812) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91028) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91308) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91590) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (91843) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92073) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92387) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92622) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (92789) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93015) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93199) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93469) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93684) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (93874) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94080) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94321) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94558) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (94804) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95014) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95247) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95439) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95627) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (95859) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96061) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96299) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96537) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96768) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (96980) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97194) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97471) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (97754) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98012) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98225) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98461) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98677) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (98889) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99068) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99298) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99523) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (99796) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100032) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100231) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100408) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100652) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (100886) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101120) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101398) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101656) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (101904) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102137) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102358) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102610) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (102874) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103137) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103420) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103644) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (103923) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104200) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104412) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104699) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (104976) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105220) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105504) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105757) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (105985) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106211) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106470) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106702) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (106964) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107203) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107399) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107620) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (107821) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108039) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108185) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108432) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108697) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (108933) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109138) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109355) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109648) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (109795) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (110022) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (110253) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (110454) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (110674) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (110925) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (111133) example:take_picture: 0 Apriltags Found![0m
+[0;32mI (111385) example:take_picture: 0 Apriltags Found![0m
