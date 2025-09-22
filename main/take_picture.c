@@ -191,6 +191,19 @@ void app_main(void)
 
         // use pic->buf to access the image
         ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes", pic->len);
+
+        image_u8_t at_im = {
+          .width = pic->width,
+          .height = pic->height,
+          .stride = pic->width,
+          .buf = pic->buf
+        };
+        zarray_t *at_detections = apriltag_detector_detect(td, &at_im);
+
+        for (int i = 0; i < zarray_size(detections); i++) {
+          apriltag_detection_t *det;
+          zarray_get(at_detections, i, &det);
+        }
         esp_camera_fb_return(pic);
 
         vTaskDelay(5000 / portTICK_RATE_MS);

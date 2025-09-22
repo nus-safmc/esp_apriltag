@@ -364,6 +364,13 @@
 /home/ranoot/esp/esp_at/build/esp-idf/esp_psram/xip_impl/CMakeFiles/install.dir
 /home/ranoot/esp/esp_at/build/esp-idf/esp_psram/xip_impl/CMakeFiles/install/local.dir
 /home/ranoot/esp/esp_at/build/esp-idf/esp_psram/xip_impl/CMakeFiles/install/strip.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/__idf_esp-apriltag.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/edit_cache.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/rebuild_cache.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/list_install_components.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/install.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/install/local.dir
+/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/CMakeFiles/install/strip.dir
 /home/ranoot/esp/esp_at/build/esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir
 /home/ranoot/esp/esp_at/build/esp-idf/esp_ringbuf/CMakeFiles/edit_cache.dir
 /home/ranoot/esp/esp_at/build/esp-idf/esp_ringbuf/CMakeFiles/rebuild_cache.dir

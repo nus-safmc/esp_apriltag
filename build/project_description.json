@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "camera_example",
-    "project_version":    "1",
+    "project_version":    "6311974-dirty",
     "project_path":       "/home/ranoot/esp/esp_at",
     "idf_path":           "/home/ranoot/esp/esp-idf",
     "build_dir":          "/home/ranoot/esp/esp_at/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/ranoot/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/ranoot/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/ranoot/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/ranoot/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/ranoot/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "espressif__esp32-camera", "espressif__esp_jpeg", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/ranoot/esp/esp-idf/components/app_update", "/home/ranoot/esp/esp-idf/components/bootloader", "/home/ranoot/esp/esp-idf/components/bootloader_support", "/home/ranoot/esp/esp-idf/components/cxx", "/home/ranoot/esp/esp-idf/components/driver", "/home/ranoot/esp/esp-idf/components/efuse", "/home/ranoot/esp/esp-idf/components/esp_app_format", "/home/ranoot/esp/esp-idf/components/esp_bootloader_format", "/home/ranoot/esp/esp-idf/components/esp_common", "/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/ranoot/esp/esp-idf/components/esp_driver_bitscrambler", "/home/ranoot/esp/esp-idf/components/esp_driver_dac", "/home/ranoot/esp/esp-idf/components/esp_driver_gpio", "/home/ranoot/esp/esp-idf/components/esp_driver_gptimer", "/home/ranoot/esp/esp-idf/components/esp_driver_i2c", "/home/ranoot/esp/esp-idf/components/esp_driver_i2s", "/home/ranoot/esp/esp-idf/components/esp_driver_ledc", "/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm", "/home/ranoot/esp/esp-idf/components/esp_driver_parlio", "/home/ranoot/esp/esp-idf/components/esp_driver_pcnt", "/home/ranoot/esp/esp-idf/components/esp_driver_rmt", "/home/ranoot/esp/esp-idf/components/esp_driver_sdio", "/home/ranoot/esp/esp-idf/components/esp_driver_sdm", "/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc", "/home/ranoot/esp/esp-idf/components/esp_driver_sdspi", "/home/ranoot/esp/esp-idf/components/esp_driver_spi", "/home/ranoot/esp/esp-idf/components/esp_driver_tsens", "/home/ranoot/esp/esp-idf/components/esp_driver_twai", "/home/ranoot/esp/esp-idf/components/esp_driver_uart", "/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/ranoot/esp/esp-idf/components/esp_hw_support", "/home/ranoot/esp/esp-idf/components/esp_mm", "/home/ranoot/esp/esp-idf/components/esp_partition", "/home/ranoot/esp/esp-idf/components/esp_pm", "/home/ranoot/esp/esp-idf/components/esp_psram", "/home/ranoot/esp/esp-idf/components/esp_ringbuf", "/home/ranoot/esp/esp-idf/components/esp_rom", "/home/ranoot/esp/esp-idf/components/esp_security", "/home/ranoot/esp/esp-idf/components/esp_system", "/home/ranoot/esp/esp-idf/components/esp_timer", "/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera", "/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg", "/home/ranoot/esp/esp-idf/components/esptool_py", "/home/ranoot/esp/esp-idf/components/freertos", "/home/ranoot/esp/esp-idf/components/hal", "/home/ranoot/esp/esp-idf/components/heap", "/home/ranoot/esp/esp-idf/components/log", "/home/ranoot/esp/esp_at/main", "/home/ranoot/esp/esp-idf/components/mbedtls", "/home/ranoot/esp/esp-idf/components/newlib", "/home/ranoot/esp/esp-idf/components/nvs_flash", "/home/ranoot/esp/esp-idf/components/partition_table", "/home/ranoot/esp/esp-idf/components/pthread", "/home/ranoot/esp/esp-idf/components/sdmmc", "/home/ranoot/esp/esp-idf/components/soc", "/home/ranoot/esp/esp-idf/components/spi_flash", "/home/ranoot/esp/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp-apriltag", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "espressif__esp32-camera", "espressif__esp_jpeg", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/ranoot/esp/esp-idf/components/app_update", "/home/ranoot/esp/esp-idf/components/bootloader", "/home/ranoot/esp/esp-idf/components/bootloader_support", "/home/ranoot/esp/esp-idf/components/cxx", "/home/ranoot/esp/esp-idf/components/driver", "/home/ranoot/esp/esp-idf/components/efuse", "/home/ranoot/esp/esp_at/components/esp-apriltag", "/home/ranoot/esp/esp-idf/components/esp_app_format", "/home/ranoot/esp/esp-idf/components/esp_bootloader_format", "/home/ranoot/esp/esp-idf/components/esp_common", "/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/ranoot/esp/esp-idf/components/esp_driver_bitscrambler", "/home/ranoot/esp/esp-idf/components/esp_driver_dac", "/home/ranoot/esp/esp-idf/components/esp_driver_gpio", "/home/ranoot/esp/esp-idf/components/esp_driver_gptimer", "/home/ranoot/esp/esp-idf/components/esp_driver_i2c", "/home/ranoot/esp/esp-idf/components/esp_driver_i2s", "/home/ranoot/esp/esp-idf/components/esp_driver_ledc", "/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm", "/home/ranoot/esp/esp-idf/components/esp_driver_parlio", "/home/ranoot/esp/esp-idf/components/esp_driver_pcnt", "/home/ranoot/esp/esp-idf/components/esp_driver_rmt", "/home/ranoot/esp/esp-idf/components/esp_driver_sdio", "/home/ranoot/esp/esp-idf/components/esp_driver_sdm", "/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc", "/home/ranoot/esp/esp-idf/components/esp_driver_sdspi", "/home/ranoot/esp/esp-idf/components/esp_driver_spi", "/home/ranoot/esp/esp-idf/components/esp_driver_tsens", "/home/ranoot/esp/esp-idf/components/esp_driver_twai", "/home/ranoot/esp/esp-idf/components/esp_driver_uart", "/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/ranoot/esp/esp-idf/components/esp_hw_support", "/home/ranoot/esp/esp-idf/components/esp_mm", "/home/ranoot/esp/esp-idf/components/esp_partition", "/home/ranoot/esp/esp-idf/components/esp_pm", "/home/ranoot/esp/esp-idf/components/esp_psram", "/home/ranoot/esp/esp-idf/components/esp_ringbuf", "/home/ranoot/esp/esp-idf/components/esp_rom", "/home/ranoot/esp/esp-idf/components/esp_security", "/home/ranoot/esp/esp-idf/components/esp_system", "/home/ranoot/esp/esp-idf/components/esp_timer", "/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera", "/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg", "/home/ranoot/esp/esp-idf/components/esptool_py", "/home/ranoot/esp/esp-idf/components/freertos", "/home/ranoot/esp/esp-idf/components/hal", "/home/ranoot/esp/esp-idf/components/heap", "/home/ranoot/esp/esp-idf/components/log", "/home/ranoot/esp/esp_at/main", "/home/ranoot/esp/esp-idf/components/mbedtls", "/home/ranoot/esp/esp-idf/components/newlib", "/home/ranoot/esp/esp-idf/components/nvs_flash", "/home/ranoot/esp/esp-idf/components/partition_table", "/home/ranoot/esp/esp-idf/components/pthread", "/home/ranoot/esp/esp-idf/components/sdmmc", "/home/ranoot/esp/esp-idf/components/soc", "/home/ranoot/esp/esp-idf/components/spi_flash", "/home/ranoot/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -117,6 +117,21 @@
             "file": "/home/ranoot/esp/esp_at/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/ranoot/esp/esp-idf/components/efuse/esp32s3/esp_efuse_table.c", "/home/ranoot/esp/esp-idf/components/efuse/esp32s3/esp_efuse_fields.c", "/home/ranoot/esp/esp-idf/components/efuse/esp32s3/esp_efuse_rtc_calib.c", "/home/ranoot/esp/esp-idf/components/efuse/esp32s3/esp_efuse_utility.c", "/home/ranoot/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/ranoot/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/ranoot/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/ranoot/esp/esp-idf/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c", "/home/ranoot/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32s3/include" ]
+        },
+        "esp-apriltag": {
+            "alias": "idf::esp-apriltag",
+            "target": "___idf_esp-apriltag",
+            "prefix": "idf",
+            "dir": "/home/ranoot/esp/esp_at/components/esp-apriltag",
+            "type": "LIBRARY",
+            "lib": "__idf_esp-apriltag",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ranoot/esp/esp_at/build/esp-idf/esp-apriltag/libesp-apriltag.a",
+            "sources": [ "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/apriltag.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/apriltag_pose.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/apriltag_quad_thresh.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tag16h5.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tag25h9.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tag36h10.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tag36h11.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tagCircle21h7.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tagCircle49h12.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tagCustom48h12.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tagStandard41h12.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/tagStandard52h13.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/g2d.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/getopt.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/homography.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/image_u8.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/image_u8_parallel.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/image_u8x3.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/image_u8x4.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/matd.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/pam.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/pjpeg-idct.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/pjpeg.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/pnm.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/pthreads_cross.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/string_util.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/svd22.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/time_util.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/unionfind.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/workerpool.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/zarray.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/zhash.c", "/home/ranoot/esp/esp_at/components/esp-apriltag/apriltag/common/zmaxheap.c" ],
+            "include_dirs": [ "apriltag" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -550,7 +565,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ranoot/esp/esp_at/build/esp-idf/esp_psram/libesp_psram.a",
-            "sources": [ "/home/ranoot/esp/esp-idf/components/esp_psram/system_layer/esp_psram.c", "/home/ranoot/esp/esp-idf/components/esp_psram/device/esp_psram_impl_ap_quad.c", "/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/mmu_psram_flash.c" ],
+            "sources": [ "/home/ranoot/esp/esp-idf/components/esp_psram/system_layer/esp_psram.c", "/home/ranoot/esp/esp-idf/components/esp_psram/esp32s3/esp_psram_impl_octal.c", "/home/ranoot/esp/esp-idf/components/esp_psram/device", "/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/mmu_psram_flash.c" ],
             "include_dirs": [ "include", "xip_impl/include" ]
         },
         "esp_ringbuf": {
@@ -741,11 +756,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_psram", "espressif__esp32-camera" ],
+            "priv_reqs": [ "nvs_flash", "esp_psram", "esp-apriltag", "espressif__esp32-camera" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp32-camera" ],
             "file": "/home/ranoot/esp/esp_at/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/ranoot/esp/esp_at/main/take_picture.c", "/home/ranoot/esp/esp_at/main/apriltag.c", "/home/ranoot/esp/esp_at/main/tag36h11.c", "/home/ranoot/esp/esp_at/main/common/g2d.c", "/home/ranoot/esp/esp_at/main/common/getopt.c", "/home/ranoot/esp/esp_at/main/common/homography.c", "/home/ranoot/esp/esp_at/main/common/image_u8.c", "/home/ranoot/esp/esp_at/main/common/image_u8_parallel.c", "/home/ranoot/esp/esp_at/main/common/image_u8x3.c", "/home/ranoot/esp/esp_at/main/common/image_u8x4.c", "/home/ranoot/esp/esp_at/main/common/matd.c", "/home/ranoot/esp/esp_at/main/common/pam.c", "/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c", "/home/ranoot/esp/esp_at/main/common/pjpeg.c", "/home/ranoot/esp/esp_at/main/common/pnm.c", "/home/ranoot/esp/esp_at/main/common/postscript_utils.h", "/home/ranoot/esp/esp_at/main/common/pthreads_cross.c", "/home/ranoot/esp/esp_at/main/common/pthreads_cross.h", "/home/ranoot/esp/esp_at/main/common/string_util.c", "/home/ranoot/esp/esp_at/main/common/svd22.c", "/home/ranoot/esp/esp_at/main/common/time_util.c", "/home/ranoot/esp/esp_at/main/common/unionfind.c", "/home/ranoot/esp/esp_at/main/common/workerpool.c", "/home/ranoot/esp/esp_at/main/common/zarray.c", "/home/ranoot/esp/esp_at/main/common/zhash.c", "/home/ranoot/esp/esp_at/main/common/zmaxheap.c" ],
+            "sources": [ "/home/ranoot/esp/esp_at/main/take_picture.c" ],
             "include_dirs": []
         },
         "mbedtls": {
@@ -2188,10 +2203,22 @@
             "dir": "/home/ranoot/esp/esp_at/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_psram", "espressif__esp32-camera" ],
+            "priv_reqs": [ "nvs_flash", "esp_psram", "esp-apriltag", "espressif__esp32-camera" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp32-camera" ],
             "include_dirs": []
+        },
+        "esp-apriltag": {
+            "alias": "idf::esp-apriltag",
+            "target": "___idf_esp-apriltag",
+            "prefix": "idf",
+            "dir": "/home/ranoot/esp/esp_at/components/esp-apriltag",
+            "lib": "__idf_esp-apriltag",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "apriltag" ]
         },
         "espressif__esp32-camera": {
             "alias": "idf::espressif__esp32-camera",

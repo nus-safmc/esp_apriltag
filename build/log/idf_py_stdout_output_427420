@@ -1,0 +1,95 @@
+Command: /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ranoot/esp/esp_at/build/camera_example.elf /home/ranoot/esp/esp_at/build/bootloader/bootloader.elf -m '/home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/ranoot/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 22 2025 17:52:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=0d064h ( 53348) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0002d08c vaddr=3fc94400 size=02f8ch ( 12172) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=26024h (155684) map[0m
+[0;32mI (129) esp_image: segment 3: paddr=0005604c vaddr=3fc9738c size=037c8h ( 14280) load[0m
+[0;32mI (132) esp_image: segment 4: paddr=0005981c vaddr=40374000 size=103a0h ( 66464) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=00069bc4 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (163) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (164) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (165) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (170) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (174) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (178) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (183) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (188) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (192) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (198) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (202) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (206) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (210) esp_psram: Speed: 80MHz[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (642) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (650) cpu_start: Pro cpu start user code[0m
+[0;32mI (651) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (651) app_init: Application information:[0m
+[0;32mI (651) app_init: Project name:     camera_example[0m
+[0;32mI (655) app_init: App version:      6311974-dirty[0m
+[0;32mI (660) app_init: Compile time:     Sep 22 2025 18:08:45[0m
+[0;32mI (665) app_init: ELF file SHA256:  ef5701aa3...[0m
+[0;32mI (669) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (673) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (677) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (681) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (691) heap_init: At 3FC9BCF8 len 0004DA18 (310 KiB): RAM[0m
+[0;32mI (696) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (701) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (707) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (712) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (719) spi_flash: detected chip: gd[0m
+[0;32mI (722) spi_flash: flash io: qio[0m
+[0;33mW (725) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (737) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (743) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (750) main_task: Started on CPU0[0m
+[0;32mI (753) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (761) main_task: Calling app_main()[0m
+[0;32mI (764) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (767) cam_hal: cam init ok[0m
+[0;32mI (769) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (773) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (788) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (788) camera: Detected OV2640 camera[0m
+[0;32mI (789) camera: Detected camera at address=0x30[0m
+[0;32mI (862) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (862) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (864) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (870) cam_hal: cam config ok[0m
+[0;32mI (872) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+apriltag.c:222:quick_decode_init(): Failed to allocate hamming decode table
+[0;32mI (951) example:take_picture: Taking picture...[0m
+[0;32mI (984) example:take_picture: Picture taken! Its size was: 5443 bytes[0m
+[0;32mI (5984) example:take_picture: Taking picture...[0m
+[0;32mI (5984) example:take_picture: Picture taken! Its size was: 5494 bytes[0m
+[0;32mI (10984) example:take_picture: Taking picture...[0m
+[0;32mI (10984) example:take_picture: Picture taken! Its size was: 3792 bytes[0m
