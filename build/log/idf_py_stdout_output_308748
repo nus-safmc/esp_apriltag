@@ -1,0 +1,1019 @@
+Command: ninja all
+[1/680] Generating project_elf_src_esp32s3.c
+[2/680] Generating /home/ranoot/esp/esp_at/build/esp-idf/esp_system/ld/sections.ld.in linker script...
+[3/680] Generating /home/ranoot/esp/esp_at/build/esp-idf/esp_system/ld/memory.ld linker script...
+[4/680] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.obj
+[5/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj
+[6/680] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.obj
+[7/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.obj
+[8/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj
+[9/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/block_cipher.c.obj
+[10/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj
+[11/680] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.obj
+[12/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj
+[13/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj
+[14/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.obj
+[15/680] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj
+[16/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj
+[17/680] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.obj
+[18/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj
+[19/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj
+[20/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj
+[21/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj
+[22/680] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x11000,24K,
+phy_init,data,phy,0x17000,4K,
+factory,app,factory,0x20000,1M,
+*******************************************************************************
+[23/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj
+[24/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.obj
+[25/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj
+[26/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj
+[27/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj
+[28/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj
+[29/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj
+[30/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj
+[31/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj
+[32/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj
+[33/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj
+[34/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj
+[35/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj
+[36/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj
+[37/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.obj
+[38/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj
+[39/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj
+[40/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj
+[41/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj
+[42/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj
+[43/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj
+[44/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj
+[45/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj
+[46/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj
+[47/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj
+[48/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/apb_backup_dma.c.obj
+[49/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj
+[50/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj
+[51/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj
+[52/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_ecc.c.obj
+[53/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj
+[54/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj
+[55/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj
+[56/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj
+[57/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj
+[58/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj
+[59/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj
+[60/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj
+[61/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj
+[62/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.obj
+[63/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj
+[64/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj
+[65/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj
+[66/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj
+[67/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.obj
+[68/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj
+[69/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj
+[70/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj
+[71/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj
+[72/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.obj
+[73/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj
+[74/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj
+[75/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj
+[76/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj
+[77/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj
+[78/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj
+[79/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj
+[80/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj
+[81/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj
+[82/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj
+[83/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/esp_mem.c.obj
+[84/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/esp_hardware.c.obj
+[85/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.obj
+[86/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj
+[87/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/esp_timing.c.obj
+[88/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/dma/esp_aes_gdma_impl.c.obj
+[89/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj
+[90/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj
+[91/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/esp_aes_xts.c.obj
+[92/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj
+[93/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/esp_aes_common.c.obj
+[94/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj
+[95/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.obj
+[96/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj
+[97/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/bignum/bignum_alt.c.obj
+[98/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/md/esp_md.c.obj
+[99/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj
+[100/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj
+[101/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj
+[102/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/bignum/esp_bignum.c.obj
+[103/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj
+[104/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj
+[105/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj
+[106/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/dma/esp_aes_dma_core.c.obj
+[107/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/dma/esp_aes.c.obj
+[108/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/core/sha.c.obj
+[109/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj
+[110/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj
+[111/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/aes/esp_aes_gcm.c.obj
+[112/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj
+[113/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj
+[114/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj
+[115/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj
+[116/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
+[117/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj
+[118/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj
+[119/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj
+[120/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj
+[121/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj
+[122/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj
+[123/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj
+[124/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
+[125/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj
+[126/680] Building C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj
+[127/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/esp_platform_time.c.obj
+[128/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj
+[129/680] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_app_desc.c.obj
+[130/680] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[131/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/ranoot/esp/esp-idf/components/mbedtls/port/mbedtls_debug.c.obj
+[132/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj
+[133/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj
+[134/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj
+[135/680] Creating directories for 'bootloader'
+[136/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj
+[137/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj
+[138/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj
+[139/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj
+[140/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[141/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_startup.c.obj
+[142/680] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj
+[143/680] No download step for 'bootloader'
+[144/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj
+[145/680] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj
+[146/680] No update step for 'bootloader'
+[147/680] No patch step for 'bootloader'
+[148/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj
+[149/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[150/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[151/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[152/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[153/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[154/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj
+[155/680] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_ops.c.obj
+[156/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj
+[157/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[158/680] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[159/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions.c.obj
+[160/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions_event_groups.c.obj
+[161/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[162/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[163/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[164/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[165/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[166/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[167/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[168/680] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj
+[169/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj
+[170/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj
+[171/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[172/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_issi.c.obj
+[173/680] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj
+[174/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj
+[175/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj
+[176/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_gd.c.obj
+[177/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[178/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/secure_boot_secure_features.c.obj
+[179/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_drivers.c.obj
+[180/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj
+[181/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj
+[182/680] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_utils.c.obj
+[183/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj
+[184/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_boya.c.obj
+[185/680] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_msync.c.obj
+[186/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic.c.obj
+[187/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj
+[188/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj
+[189/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[190/680] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj
+[191/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[192/680] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[193/680] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj
+[194/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj
+[195/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj
+[196/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj
+[197/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj
+[198/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj
+[199/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj
+[200/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[201/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj
+[202/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj
+[203/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system_console.c.obj
+[204/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
+[205/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
+[206/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
+[207/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
+[208/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
+[209/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
+[210/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj
+[211/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj
+[212/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
+[213/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
+[214/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
+[215/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj
+[216/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.obj
+[217/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj
+[218/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj
+[219/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.obj
+[220/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj
+[221/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[222/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj
+[223/680] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/highint_hdl.S.obj
+[224/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj
+[225/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj
+[226/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj
+[227/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.obj
+[228/680] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[229/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
+[230/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[231/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
+[232/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/clk.c.obj
+[233/680] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj
+[234/680] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[235/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj
+[236/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[237/680] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+[238/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[239/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj
+[240/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj
+[241/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[242/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.obj
+[243/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/cache_err_int.c.obj
+[244/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[245/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[246/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj
+[247/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/reset_reason.c.obj
+[248/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj
+[249/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[250/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[251/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj
+[252/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj
+[253/680] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+[254/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[255/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj
+[256/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj
+[257/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj
+[258/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj
+[259/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj
+[260/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj
+[261/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[262/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj
+[263/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[264/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj
+[265/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj
+[266/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.obj
+[267/680] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/system_internal.c.obj
+[268/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj
+[269/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj
+[270/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_top.c.obj
+[271/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj
+[272/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/systimer_hal.c.obj
+[273/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj
+[274/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj
+[275/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj
+[276/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj
+[277/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj
+[278/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/clk_tree_hal.c.obj
+[279/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj
+[280/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lcd_hal.c.obj
+[281/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_ahb_v1.c.obj
+[282/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_serial_jtag_hal.c.obj
+[283/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hmac_hal.c.obj
+[284/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj
+[285/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj
+[286/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ds_hal.c.obj
+[287/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj
+[288/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj
+[289/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj
+[290/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj
+[291/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_wrap_hal.c.obj
+[292/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj
+[293/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj
+[294/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj
+[295/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj
+[296/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj
+[297/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+[298/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj
+[299/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/xt_wdt_hal.c.obj
+[300/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj
+[301/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj
+[302/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+[303/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_write.c.obj
+[304/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_sja1000.c.obj
+[305/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_timestamp.c.obj
+[306/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+[307/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/rtc_cntl_hal.c.obj
+[308/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+[309/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+[310/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/log_level.c.obj
+[311/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hd_hal.c.obj
+[312/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_lock.c.obj
+[313/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/tag_log_level.c.obj
+[314/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[315/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/linked_list/log_linked_list.c.obj
+[316/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[317/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.obj
+[318/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj
+[319/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/cache/log_binary_heap.c.obj
+[320/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_gpspi.c.obj
+[321/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj
+[322/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj
+[323/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[324/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj
+[325/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_dwc_hal.c.obj
+[326/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj
+[327/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[328/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj
+[329/680] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+[330/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj
+[331/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj
+[332/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj
+[333/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj
+[334/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj
+[335/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj
+[336/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj
+[337/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj
+[338/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj
+[339/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj
+[340/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj
+[341/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj
+[342/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj
+[343/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj
+[344/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj
+[345/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj
+[346/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj
+[347/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj
+[348/680] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj
+[349/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj
+[350/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj
+[351/680] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj
+[352/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
+[353/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+[354/680] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj
+[355/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[356/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj
+[357/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_gpio_reserve.c.obj
+[358/680] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj
+[359/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/revision.c.obj
+[360/680] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj
+[361/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
+[362/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.obj
+[363/680] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj
+[364/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[365/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.obj
+[366/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/hw_random.c.obj
+[367/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/regi2c_ctrl.c.obj
+[368/680] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj
+[369/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj
+[370/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.obj
+[371/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.obj
+[372/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_clk_tree_common.c.obj
+[373/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sar_periph_ctrl_common.c.obj
+[374/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.obj
+[375/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modem.c.obj
+[376/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clk.c.obj
+[377/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.obj
+[378/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
+[379/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj
+[380/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_console.c.obj
+[381/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.obj
+[382/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.obj
+[383/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_dma_utils.c.obj
+[384/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma_link.c.obj
+[385/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_event.c.obj
+[386/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_share_hw_ctrl.c.obj
+[387/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_bus_lock.c.obj
+[388/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_wake_stub.c.obj
+[389/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.obj
+[390/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/adc_share_hw_ctrl.c.obj
+[391/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[392/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.obj
+[393/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[394/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[395/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clock_output.c.obj
+[396/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj
+[397/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.obj
+[398/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.obj
+[399/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.obj
+[400/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_gpio.c.obj
+[401/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[402/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj
+[403/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj
+[404/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/heap_idf.c.obj
+[405/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.obj
+[406/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/app_startup.c.obj
+[407/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_common.c.obj
+[408/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.obj
+[409/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[410/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.obj
+[411/680] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj
+[412/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[413/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/poll.c.obj
+[414/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/init.c.obj
+[415/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/abort.c.obj
+[416/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_systick.c.obj
+[417/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/assert.c.obj
+[418/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj
+[419/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj
+[420/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/termios.c.obj
+[421/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_compatibility.c.obj
+[422/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/pthread.c.obj
+[423/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/heap.c.obj
+[424/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/random.c.obj
+[425/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/getentropy.c.obj
+[426/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj
+[427/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.obj
+[428/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/sysconf.c.obj
+[429/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/realpath.c.obj
+[430/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/flockfile.c.obj
+[431/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.obj
+[432/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/scandir.c.obj
+[433/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_init.c.obj
+[434/680] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj
+[435/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.obj
+[436/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/syscalls.c.obj
+[437/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/port/esp_time_impl.c.obj
+[438/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/locks.c.obj
+[439/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.obj
+[440/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj
+[441/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/newlib_init.c.obj
+[442/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/time.c.obj
+[443/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_syscalls.c.obj
+[444/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/port.c.obj
+[445/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/port/xtensa/stdatomic_s32c1i.c.obj
+[446/680] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj
+[447/680] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_semaphore.c.obj
+[448/680] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_init.cpp.obj
+[449/680] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_exception_stubs.cpp.obj
+[450/680] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj
+[451/680] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj
+[452/680] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj
+[453/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_platform.cpp.obj
+[454/680] Building C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader_aes.c.obj
+[455/680] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj
+[456/680] Building C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader_xts_aes.c.obj
+[457/680] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/xip_impl/mmu_psram_flash.c.obj
+[458/680] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/device/esp_psram_impl_ap_quad.c.obj
+[459/680] Building C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader.c.obj
+[460/680] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.obj
+[461/680] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/stdatomic.c.obj
+[462/680] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_guards.cpp.obj
+[463/680] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/system_layer/esp_psram.c.obj
+[464/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_lookup.cpp.obj
+[465/680] Linking C static library esp-idf/esp_psram/libesp_psram.a
+[466/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition.cpp.obj
+[467/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_item_hash_list.cpp.obj
+[468/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_locked.cpp.obj
+[469/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj
+[470/680] Performing configure step for 'bootloader'
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Minimal build - OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/ranoot/esp/esp_at/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /home/ranoot/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /home/ranoot/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/ranoot/esp/esp-idf/components/bootloader /home/ranoot/esp/esp-idf/components/bootloader_support /home/ranoot/esp/esp-idf/components/efuse /home/ranoot/esp/esp-idf/components/esp_app_format /home/ranoot/esp/esp-idf/components/esp_bootloader_format /home/ranoot/esp/esp-idf/components/esp_common /home/ranoot/esp/esp-idf/components/esp_hw_support /home/ranoot/esp/esp-idf/components/esp_rom /home/ranoot/esp/esp-idf/components/esp_security /home/ranoot/esp/esp-idf/components/esp_system /home/ranoot/esp/esp-idf/components/esptool_py /home/ranoot/esp/esp-idf/components/freertos /home/ranoot/esp/esp-idf/components/hal /home/ranoot/esp/esp-idf/components/log /home/ranoot/esp/esp-idf/components/bootloader/subproject/main /home/ranoot/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/ranoot/esp/esp-idf/components/newlib /home/ranoot/esp/esp-idf/components/partition_table /home/ranoot/esp/esp-idf/components/soc /home/ranoot/esp/esp-idf/components/spi_flash /home/ranoot/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ranoot/esp/esp_at/build/bootloader
+[471/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_api.cpp.obj
+[472/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_types.cpp.obj
+[473/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.obj
+[474/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_simple.cpp.obj
+[475/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_cxx_api.cpp.obj
+[476/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_encrypted_partition.cpp.obj
+[477/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.obj
+[478/680] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.obj
+[479/680] Linking C static library esp-idf/nvs_flash/libnvs_flash.a
+[480/680] Linking C static library esp-idf/cxx/libcxx.a
+[481/680] Linking C static library esp-idf/pthread/libpthread.a
+[482/680] Linking C static library esp-idf/newlib/libnewlib.a
+[483/680] Linking C static library esp-idf/freertos/libfreertos.a
+[484/680] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[485/680] Linking C static library esp-idf/esp_security/libesp_security.a
+[486/680] Linking C static library esp-idf/soc/libsoc.a
+[487/680] Performing build step for 'bootloader'
+[1/122] Generating project_elf_src_esp32s3.c
+[2/122] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[3/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj
+[4/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[5/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[6/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj
+[7/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj
+[8/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj
+[9/122] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[10/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[11/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[12/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj
+[13/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj
+[14/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj
+[15/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj
+[16/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj
+[17/122] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj
+[18/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj
+[19/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj
+[20/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj
+[21/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj
+[22/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj
+[23/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj
+[24/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj
+[25/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj
+[26/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj
+[27/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj
+[28/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj
+[29/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj
+[30/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj
+[31/122] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj
+[32/122] Building C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj
+[33/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[34/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[35/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[36/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[37/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj
+[38/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[39/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[40/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj
+[41/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[42/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[43/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[44/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[45/122] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[46/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj
+[47/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[48/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[49/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[50/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[51/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[52/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[53/122] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[54/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[55/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[56/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[57/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj
+[58/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[59/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj
+[60/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[61/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[62/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj
+[63/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[64/122] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[65/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[66/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+[67/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj
+[68/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj
+[69/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[70/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[71/122] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[72/122] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[73/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[74/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[75/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj
+[76/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[77/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[78/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[79/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj
+[80/122] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+[81/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+[82/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[83/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[84/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[85/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[86/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+[87/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[88/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+[89/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[90/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[91/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+[92/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[93/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+[94/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+[95/122] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[96/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
+[97/122] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+[98/122] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[99/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[100/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+[101/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+[102/122] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+[103/122] Linking C static library esp-idf/log/liblog.a
+[104/122] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj
+[105/122] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[106/122] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[107/122] Linking C static library esp-idf/esp_common/libesp_common.a
+[108/122] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[109/122] Linking C static library esp-idf/esp_system/libesp_system.a
+[110/122] Linking C static library esp-idf/efuse/libefuse.a
+[111/122] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[112/122] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[113/122] Linking C static library esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+[114/122] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[115/122] Linking C static library esp-idf/hal/libhal.a
+[116/122] Linking C static library esp-idf/micro-ecc/libmicro-ecc.a
+[117/122] Linking C static library esp-idf/soc/libsoc.a
+[118/122] Linking C static library esp-idf/xtensa/libxtensa.a
+[119/122] Linking C static library esp-idf/main/libmain.a
+[120/122] Linking C executable bootloader.elf
+[121/122] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/ranoot/esp/esp_at/build/bootloader/bootloader.bin
+[122/122] cd /home/ranoot/esp/esp_at/build/bootloader/esp-idf/esptool_py && /home/ranoot/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ranoot/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/ranoot/esp/esp_at/build/bootloader/bootloader.bin
+Bootloader binary size 0x5800 bytes. 0xa800 bytes (66%) free.
+[488/680] Linking C static library esp-idf/heap/libheap.a
+[489/680] No install step for 'bootloader'
+[490/680] Linking C static library esp-idf/log/liblog.a
+[491/680] Completed 'bootloader'
+[492/680] Linking C static library esp-idf/hal/libhal.a
+[493/680] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[494/680] Linking C static library esp-idf/esp_common/libesp_common.a
+[495/680] Linking C static library esp-idf/esp_system/libesp_system.a
+[496/680] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[497/680] Linking C static library esp-idf/esp_mm/libesp_mm.a
+[498/680] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[499/680] Linking C static library esp-idf/efuse/libefuse.a
+[500/680] Linking C static library esp-idf/esp_partition/libesp_partition.a
+[501/680] Linking C static library esp-idf/app_update/libapp_update.a
+[502/680] Linking C static library esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+[503/680] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[504/680] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+[505/680] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+[506/680] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+[507/680] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
+[508/680] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
+[509/680] Generating x509_crt_bundle
+[510/680] Generating ../../x509_crt_bundle.S
+[511/680] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[512/680] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj
+[513/680] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj
+[514/680] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj
+[515/680] Building C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_glitch_filter_ops.c.obj
+[516/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_init.c.obj
+[517/680] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[518/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj
+[519/680] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj
+[520/680] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[521/680] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr.c.obj
+[522/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj
+[523/680] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj
+[524/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj
+[525/680] Building C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_pin_glitch_filter.c.obj
+[526/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_systimer.c.obj
+[527/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/hm0360.c.obj
+[528/680] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj
+[529/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb-ng.c.obj
+[530/680] Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
+[531/680] Building C object esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer_common.c.obj
+[532/680] Building C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/rtc_io.c.obj
+[533/680] Linking C static library esp-idf/mbedtls/libmbedtls.a
+[534/680] Building C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/dedic_gpio.c.obj
+[535/680] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj
+[536/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_com.c.obj
+[537/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj
+[538/680] Building C object esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer.c.obj
+[539/680] Linking C static library esp-idf/esp_pm/libesp_pm.a
+[540/680] Building C object esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/src/pulse_cnt.c.obj
+[541/680] Building C object esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.obj
+[542/680] Building C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave.c.obj
+[543/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_oper.c.obj
+[544/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cmpr.c.obj
+[545/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_timer.c.obj
+[546/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_fault.c.obj
+[547/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_sync.c.obj
+[548/680] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_platform.c.obj
+[549/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj
+[550/680] Linking C static library esp-idf/esp_timer/libesp_timer.a
+[551/680] Building C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.obj
+[552/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_gen.c.obj
+[553/680] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_tdm.c.obj
+[554/680] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cap.c.obj
+[555/680] Building C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_crc.c.obj
+[556/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj
+[557/680] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_std.c.obj
+[558/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj
+[559/680] Building C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio.c.obj
+[560/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder.c.obj
+[561/680] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_pdm.c.obj
+[562/680] Linking C static library esp-idf/esp_driver_gpio/libesp_driver_gpio.a
+[563/680] Building C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_transaction.c.obj
+[564/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj
+[565/680] Building C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_common.c.obj
+[566/680] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_common.c.obj
+[567/680] Building C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_master.c.obj
+[568/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_copy.c.obj
+[569/680] Linking C static library esp-idf/xtensa/libxtensa.a
+[570/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_simple.c.obj
+[571/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj
+[572/680] Linking C static library esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+[573/680] Linking C static library esp-idf/esp_ringbuf/libesp_ringbuf.a
+[574/680] Building C object esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj
+[575/680] Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj
+[576/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj
+[577/680] Linking C static library esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a
+[578/680] Linking C static library esp-idf/esp_driver_spi/libesp_driver_spi.a
+[579/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_common.c.obj
+[580/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_bytes.c.obj
+[581/680] Linking C static library esp-idf/esp_driver_tsens/libesp_driver_tsens.a
+[582/680] Building C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj
+[583/680] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj
+[584/680] Linking C static library esp-idf/esp_driver_i2s/libesp_driver_i2s.a
+[585/680] Linking C static library esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
+[586/680] Building C object esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/src/sdm.c.obj
+[587/680] Linking C static library esp-idf/esp_driver_sdm/libesp_driver_sdm.a
+[588/680] Linking C static library esp-idf/sdmmc/libsdmmc.a
+[589/680] Building C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_common.c.obj
+[590/680] Building C object esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag_connection_monitor.c.obj
+[591/680] Building C object esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag.c.obj
+[592/680] Building C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_host.c.obj
+[593/680] Building C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai.c.obj
+[594/680] Linking C static library esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
+[595/680] Linking C static library esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
+[596/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj
+[597/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/yuv.c.obj
+[598/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj
+[599/680] Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uhci.c.obj
+[600/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_rx.c.obj
+[601/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj
+[602/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj
+[603/680] Building C object esp-idf/espressif__esp_jpeg/CMakeFiles/__idf_espressif__esp_jpeg.dir/jpeg_decoder.c.obj
+[604/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj
+[605/680] Building C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_slave.c.obj
+[606/680] Building C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj
+[607/680] Building C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_master.c.obj
+[608/680] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_tx.c.obj
+[609/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj
+[610/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/to_bmp.c.obj
+[611/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj
+[612/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/esp_camera.c.obj
+[613/680] Linking C static library esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
+[614/680] Building C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai_onchip.c.obj
+[615/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj
+[616/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj
+[617/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj
+[618/680] Building CXX object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/to_jpg.cpp.obj
+[619/680] Linking C static library esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
+[620/680] Linking C static library esp-idf/esp_driver_i2c/libesp_driver_i2c.a
+[621/680] Linking C static library esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+[622/680] Building CXX object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/jpge.cpp.obj
+[623/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj
+[624/680] Linking C static library esp-idf/esp_driver_twai/libesp_driver_twai.a
+[625/680] Building C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj
+[626/680] Linking C static library esp-idf/esp_driver_ledc/libesp_driver_ledc.a
+[627/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj
+[628/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj
+[629/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj
+[630/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj
+[631/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj
+[632/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj
+[633/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj
+[634/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj
+[635/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj
+[636/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.obj
+[637/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj
+[638/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj
+[639/680] Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj
+[640/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj
+[641/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj
+[642/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/mega_ccm.c.obj
+[643/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/pam.c.obj
+[644/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x4.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x4.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x4.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x4.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x4.c.obj -c /home/ranoot/esp/esp_at/main/common/image_u8x4.c
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c: In function 'image_u8x4_write_pnm':
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c:195:22: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  195 |     fprintf(f, "P6\n%d %d\n255\n", im.width, im.height);
+      |                     ~^             ~~~~~~~~
+      |                      |               |
+      |                      int             int32_t {aka long int}
+      |                     %ld
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c:195:25: error: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  195 |     fprintf(f, "P6\n%d %d\n255\n", im.width, im.height);
+      |                        ~^                    ~~~~~~~~~
+      |                         |                      |
+      |                         int                    int32_t {aka long int}
+      |                        %ld
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c: In function 'image_u8x4_write_pam':
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c:221:24: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  221 |     fprintf(f, "WIDTH %d\n", im->width);
+      |                       ~^     ~~~~~~~~~
+      |                        |       |
+      |                        int     int32_t {aka long int}
+      |                       %ld
+/home/ranoot/esp/esp_at/main/common/image_u8x4.c:222:25: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  222 |     fprintf(f, "HEIGHT %d\n", im->height);
+      |                        ~^     ~~~~~~~~~~
+      |                         |       |
+      |                         int     int32_t {aka long int}
+      |                        %ld
+cc1: some warnings being treated as errors
+[645/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x3.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x3.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x3.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x3.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8x3.c.obj -c /home/ranoot/esp/esp_at/main/common/image_u8x3.c
+/home/ranoot/esp/esp_at/main/common/image_u8x3.c: In function 'image_u8x3_write_pnm':
+/home/ranoot/esp/esp_at/main/common/image_u8x3.c:149:22: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  149 |     fprintf(f, "P6\n%d %d\n255\n", im->width, im->height);
+      |                     ~^             ~~~~~~~~~
+      |                      |               |
+      |                      int             int32_t {aka long int}
+      |                     %ld
+/home/ranoot/esp/esp_at/main/common/image_u8x3.c:149:25: error: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  149 |     fprintf(f, "P6\n%d %d\n255\n", im->width, im->height);
+      |                        ~^                     ~~~~~~~~~~
+      |                         |                       |
+      |                         int                     int32_t {aka long int}
+      |                        %ld
+cc1: some warnings being treated as errors
+[646/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/pthreads_cross.c.obj
+[647/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj
+[648/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj
+[649/680] Linking C static library esp-idf/esp_driver_uart/libesp_driver_uart.a
+[650/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg-idct.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg-idct.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg-idct.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg-idct.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg-idct.c.obj -c /home/ranoot/esp/esp_at/main/common/pjpeg-idct.c
+/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c: In function 'pjpeg_idct_2D_nanojpeg':
+/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c:382:19: error: passing argument 1 of 'njRowIDCT' from incompatible pointer type [-Wincompatible-pointer-types]
+  382 |         njRowIDCT(&in[coef]);
+      |                   ^~~~~~~~~
+      |                   |
+      |                   int32_t * {aka long int *}
+/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c:283:35: note: expected 'int *' but argument is of type 'int32_t *' {aka 'long int *'}
+  283 | static inline void njRowIDCT(int* blk) {
+      |                              ~~~~~^~~
+/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c:384:19: error: passing argument 1 of 'njColIDCT' from incompatible pointer type [-Wincompatible-pointer-types]
+  384 |         njColIDCT(&in[coef], &out[coef], outstride);
+      |                   ^~~~~~~~~
+      |                   |
+      |                   int32_t * {aka long int *}
+/home/ranoot/esp/esp_at/main/common/pjpeg-idct.c:328:41: note: expected 'const int *' but argument is of type 'int32_t *' {aka 'long int *'}
+  328 | static inline void njColIDCT(const int* blk, unsigned char *out, int stride) {
+      |                              ~~~~~~~~~~~^~~
+[651/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/pnm.c.obj
+[652/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/getopt.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/getopt.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/getopt.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/getopt.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/getopt.c.obj -c /home/ranoot/esp/esp_at/main/common/getopt.c
+In file included from /home/ranoot/esp/esp_at/main/common/getopt.c:32:
+/home/ranoot/esp/esp_at/main/common/string_util.h: In function 'strcaseeq':
+/home/ranoot/esp/esp_at/main/common/string_util.h:127:30: error: array subscript has type 'char' [-Werror=char-subscripts]
+  127 |         else if (islower(str1[i]) && (str1[i] - 32) == str2[i])
+      |                          ~~~~^~~
+/home/ranoot/esp/esp_at/main/common/string_util.h:129:30: error: array subscript has type 'char' [-Werror=char-subscripts]
+  129 |         else if (isupper(str1[i]) && (str1[i] + 32) == str2[i])
+      |                          ~~~~^~~
+/home/ranoot/esp/esp_at/main/common/getopt.c: In function 'getopt_parse':
+/home/ranoot/esp/esp_at/main/common/getopt.c:260:46: error: array subscript has type 'char' [-Werror=char-subscripts]
+  260 |                     if (pos==1 && isdigit(tok[pos])) {
+      |                                           ~~~^~~~~
+cc1: some warnings being treated as errors
+[653/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj
+[654/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/tag36h11.c.obj
+[655/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8_parallel.c.obj
+[656/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/hm1055.c.obj
+[657/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/workerpool.c.obj
+/home/ranoot/esp/esp_at/main/common/workerpool.c:29:9: warning: "_GNU_SOURCE" redefined
+   29 | #define _GNU_SOURCE  // Possible fix for 16.04
+      |         ^~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+[658/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/g2d.c.obj
+[659/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/zmaxheap.c.obj
+[660/680] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj
+[661/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/homography.c.obj
+[662/680] Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj
+[663/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/pjpeg.c.obj -c /home/ranoot/esp/esp_at/main/common/pjpeg.c
+/home/ranoot/esp/esp_at/main/common/pjpeg.c: In function 'pjpeg_decode_buffer':
+/home/ranoot/esp/esp_at/main/common/pjpeg.c:597:60: warning: left shift of negative value [-Wshift-negative-value]
+  597 |                                             value += ((-1) << ssss) + 1;
+      |                                                            ^~
+/home/ranoot/esp/esp_at/main/common/pjpeg.c:623:64: warning: left shift of negative value [-Wshift-negative-value]
+  623 |                                                 value += ((-1) << ssss) + 1;
+      |                                                                ^~
+/home/ranoot/esp/esp_at/main/common/pjpeg.c:674:65: error: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  674 |                 printf("pjepg: Unknown marker %02x at offset %04x\n", marker, marker_offset);
+      |                                                              ~~~^             ~~~~~~~~~~~~~
+      |                                                                 |             |
+      |                                                                 unsigned int  uint32_t {aka long unsigned int}
+      |                                                              %04lx
+cc1: some warnings being treated as errors
+[664/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/image_u8.c.obj -c /home/ranoot/esp/esp_at/main/common/image_u8.c
+/home/ranoot/esp/esp_at/main/common/image_u8.c: In function 'image_u8_write_pnm':
+/home/ranoot/esp/esp_at/main/common/image_u8.c:211:22: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  211 |     fprintf(f, "P5\n%d %d\n255\n", im->width, im->height);
+      |                     ~^             ~~~~~~~~~
+      |                      |               |
+      |                      int             int32_t {aka long int}
+      |                     %ld
+/home/ranoot/esp/esp_at/main/common/image_u8.c:211:25: error: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  211 |     fprintf(f, "P5\n%d %d\n255\n", im->width, im->height);
+      |                        ~^                     ~~~~~~~~~~
+      |                         |                       |
+      |                         int                     int32_t {aka long int}
+      |                        %ld
+cc1: some warnings being treated as errors
+[665/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/string_util.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/common/string_util.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/common/string_util.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/common/string_util.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/common/string_util.c.obj -c /home/ranoot/esp/esp_at/main/common/string_util.c
+In file included from /home/ranoot/esp/esp_at/main/common/string_util.c:29:
+/home/ranoot/esp/esp_at/main/common/string_util.h: In function 'strcaseeq':
+/home/ranoot/esp/esp_at/main/common/string_util.h:127:30: error: array subscript has type 'char' [-Werror=char-subscripts]
+  127 |         else if (islower(str1[i]) && (str1[i] - 32) == str2[i])
+      |                          ~~~~^~~
+/home/ranoot/esp/esp_at/main/common/string_util.h:129:30: error: array subscript has type 'char' [-Werror=char-subscripts]
+  129 |         else if (isupper(str1[i]) && (str1[i] + 32) == str2[i])
+      |                          ~~~~^~~
+/home/ranoot/esp/esp_at/main/common/string_util.c: In function 'str_lstrip':
+/home/ranoot/esp/esp_at/main/common/string_util.c:237:33: error: array subscript has type 'char' [-Werror=char-subscripts]
+  237 |     for(; ptr != end && isspace(*ptr); ptr++);
+      |                                 ^~~~
+/home/ranoot/esp/esp_at/main/common/string_util.c: In function 'str_rstrip':
+/home/ranoot/esp/esp_at/main/common/string_util.c:248:35: error: array subscript has type 'char' [-Werror=char-subscripts]
+  248 |     for(; ptr+1 != str && isspace(*ptr); ptr--);
+      |                                   ^~~~
+cc1: some warnings being treated as errors
+[666/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/apriltag.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/apriltag.c.obj 
+/home/ranoot/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/ranoot/esp/esp_at/build/config -I/home/ranoot/esp/esp_at/main -I/home/ranoot/esp/esp_at/main/common -I/home/ranoot/esp/esp-idf/components/newlib/platform_include -I/home/ranoot/esp/esp-idf/components/freertos/config/include -I/home/ranoot/esp/esp-idf/components/freertos/config/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/config/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ranoot/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ranoot/esp/esp-idf/components/freertos/esp_additions/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ranoot/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_hw_support/dma/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/ranoot/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/ranoot/esp/esp-idf/components/heap/include -I/home/ranoot/esp/esp-idf/components/heap/tlsf -I/home/ranoot/esp/esp-idf/components/log/include -I/home/ranoot/esp/esp-idf/components/soc/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3 -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/include -I/home/ranoot/esp/esp-idf/components/soc/esp32s3/register -I/home/ranoot/esp/esp-idf/components/hal/platform_port/include -I/home/ranoot/esp/esp-idf/components/hal/esp32s3/include -I/home/ranoot/esp/esp-idf/components/hal/include -I/home/ranoot/esp/esp-idf/components/esp_rom/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_rom/esp32s3 -I/home/ranoot/esp/esp-idf/components/esp_common/include -I/home/ranoot/esp/esp-idf/components/esp_system/include -I/home/ranoot/esp/esp-idf/components/esp_system/port/soc -I/home/ranoot/esp/esp-idf/components/esp_system/port/include/private -I/home/ranoot/esp/esp-idf/components/xtensa/esp32s3/include -I/home/ranoot/esp/esp-idf/components/xtensa/include -I/home/ranoot/esp/esp-idf/components/xtensa/deprecated_include -I/home/ranoot/esp/esp-idf/components/nvs_flash/include -I/home/ranoot/esp/esp-idf/components/esp_partition/include -I/home/ranoot/esp/esp-idf/components/esp_psram/include -I/home/ranoot/esp/esp-idf/components/esp_psram/xip_impl/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/driver/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp32-camera/conversions/include -I/home/ranoot/esp/esp-idf/components/driver/deprecated -I/home/ranoot/esp/esp-idf/components/driver/i2c/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/include -I/home/ranoot/esp/esp-idf/components/driver/twai/include -I/home/ranoot/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ranoot/esp/esp-idf/components/esp_pm/include -I/home/ranoot/esp/esp-idf/components/esp_ringbuf/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gpio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_pcnt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_gptimer/include -I/home/ranoot/esp/esp-idf/components/esp_driver_spi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2s/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/ranoot/esp/esp-idf/components/sdmmc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdspi/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_dac/include -I/home/ranoot/esp/esp-idf/components/esp_driver_rmt/include -I/home/ranoot/esp/esp-idf/components/esp_driver_tsens/include -I/home/ranoot/esp/esp-idf/components/esp_driver_sdm/include -I/home/ranoot/esp/esp-idf/components/esp_driver_i2c/include -I/home/ranoot/esp/esp-idf/components/esp_driver_uart/include -I/home/ranoot/esp/esp-idf/components/esp_driver_ledc/include -I/home/ranoot/esp/esp-idf/components/esp_driver_parlio/include -I/home/ranoot/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ranoot/esp/esp-idf/components/esp_driver_twai/include -I/home/ranoot/esp/esp_at/managed_components/espressif__esp_jpeg/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ranoot/esp/esp_at=. -fmacro-prefix-map=/home/ranoot/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/apriltag.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/apriltag.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/apriltag.c.obj -c /home/ranoot/esp/esp_at/main/apriltag.c
+In file included from /home/ranoot/esp/esp_at/main/apriltag.c:57:
+/home/ranoot/esp/esp_at/main/common/postscript_utils.h: In function 'postscript_image':
+/home/ranoot/esp/esp_at/main/common/postscript_utils.h:36:26: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+   36 |     fprintf(f, "/picstr %d string def\n", im->width);
+      |                         ~^                ~~~~~~~~~
+      |                          |                  |
+      |                          int                int32_t {aka long int}
+      |                         %ld
+/home/ranoot/esp/esp_at/main/common/postscript_utils.h:38:18: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+   38 |     fprintf(f, "%d %d 8 [1 0 0 1 0 0]\n",
+      |                 ~^
+      |                  |
+      |                  int
+      |                 %ld
+   39 |             im->width, im->height);
+      |             ~~~~~~~~~
+      |               |
+      |               int32_t {aka long int}
+/home/ranoot/esp/esp_at/main/common/postscript_utils.h:38:21: error: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+   38 |     fprintf(f, "%d %d 8 [1 0 0 1 0 0]\n",
+      |                    ~^
+      |                     |
+      |                     int
+      |                    %ld
+   39 |             im->width, im->height);
+      |                        ~~~~~~~~~~
+      |                          |
+      |                          int32_t {aka long int}
+/home/ranoot/esp/esp_at/main/apriltag.c: In function 'apriltag_detector_detect':
+/home/ranoot/esp/esp_at/main/apriltag.c:1307:24: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+ 1307 |         fprintf(f, "0 %d translate\n", darker->height);
+      |                       ~^               ~~~~~~~~~~~~~~
+      |                        |                     |
+      |                        int                   int32_t {aka long int}
+      |                       %ld
+/home/ranoot/esp/esp_at/main/apriltag.c:1388:24: error: format '%d' expects argument of type 'int', but argument 3 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+ 1388 |         fprintf(f, "0 %d translate\n", darker->height);
+      |                       ~^               ~~~~~~~~~~~~~~
+      |                        |                     |
+      |                        int                   int32_t {aka long int}
+      |                       %ld
+cc1: some warnings being treated as errors
+[667/680] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/common/matd.c.obj
+ninja: build stopped: subcommand failed.

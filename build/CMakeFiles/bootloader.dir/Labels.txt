@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/ranoot/esp/esp_at/build/CMakeFiles/bootloader
+/home/ranoot/esp/esp_at/build/CMakeFiles/bootloader.rule
+/home/ranoot/esp/esp_at/build/CMakeFiles/bootloader-complete.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/ranoot/esp/esp_at/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

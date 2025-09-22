@@ -1,0 +1,2 @@
+source /home/ranoot/esp/esp_at/build/bootloader/gdbinit/symbols
+source /home/ranoot/esp/esp_at/build/bootloader/gdbinit/connect
