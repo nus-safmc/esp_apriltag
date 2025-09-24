@@ -3,6 +3,7 @@ Memory Limitations
 - In the source files for each apriltag family, there is an array called `codedata` where each entry corresponds to a tag id (I believe).
 - This eventually gets converted to a lookup table, which can take up a lot of memory for the full tag family
 - Currently I have commented most of the tags out (Look at the code for the corresponding modifications)
+
 Compiler issues
 - The current RISCV compiler for ESP32 (xtensa?) treats `int32_t` as `long int` instead of `int`. `int` is the corresponding macro in gcc which is likely what the apriltag library is intended for.
 - Refer to the `CMakeList.txt` for the `esp_apriltag` component to see the fix
